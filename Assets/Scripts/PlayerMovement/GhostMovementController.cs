@@ -8,6 +8,11 @@ public class GhostMovementController : MonoBehaviour
     [SerializeField] int baseSpeed;
     [SerializeField] int jumpForce;
 
+    private void Awake()
+    {
+        playerRB = this.gameObject.GetComponentInParent<Rigidbody2D>();
+    }
+
     void Update(){
 
         Debug.Log(playerRB.velocity);

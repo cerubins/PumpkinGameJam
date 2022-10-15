@@ -13,6 +13,11 @@ public class PhysicalMovementScript : MonoBehaviour
 
     float distanceToGround = 0f;
 
+    private void Awake()
+    {
+        playerRB = this.gameObject.GetComponentInParent<Rigidbody2D>();
+    }
+
     void Start()
     {
         distanceToGround = GetComponent<Collider2D>().bounds.extents.y;
