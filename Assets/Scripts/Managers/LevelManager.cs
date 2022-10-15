@@ -15,6 +15,8 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] GhostController ghost_controller;
     [SerializeField] OverworldController overworld_controller;
+    [SerializeField] Cinemachine.CinemachineVirtualCamera ghost_camera;
+    [SerializeField] Cinemachine.CinemachineVirtualCamera overworld_camera;
 
     //Level vars
     public bool isOverWorld;
@@ -40,11 +42,6 @@ public class LevelManager : MonoBehaviour
 
     void switchWorld(){
         isOverWorld = !isOverWorld;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateTimer();
         if (isOverWorld)
         {
             overworld_controller.enabled = true;
@@ -55,6 +52,20 @@ public class LevelManager : MonoBehaviour
             overworld_controller.enabled = false;
             ghost_controller.enabled = true;
         }
+        overworld_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = isOverWorld;
+        ghost_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = !isOverWorld;
+
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            switchWorld();
+        }
+
+        UpdateTimer();
+
     }
 
     void UpdateTimer(){
