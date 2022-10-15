@@ -11,11 +11,16 @@ public class LevelManager : MonoBehaviour
     public float timer;
     public bool timerRunning;
 
+    [SerializeField] GhostController ghost_controller;
+    [SerializeField] OverworldController overworld_controller;
 
+    //Level vars
+    public bool isOverWorld;
 
     void Start()
     {
-        player = GameObject.Find("Player");
+        ghost_controller = GameObject.FindGameObjectWithTag("Player_Ghost").GetComponent<GhostController>();
+        overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<OverworldController>();
     }
 
 
@@ -27,7 +32,17 @@ public class LevelManager : MonoBehaviour
     } */
 
     void switchWorld(){
-
+        isOverWorld = !isOverWorld;
+        if (isOverWorld)
+        {
+            overworld_controller.enabled = true;
+            ghost_controller.enabled = false;
+        }
+        else
+        {
+            overworld_controller.enabled = false;
+            ghost_controller.enabled = true;
+        }
     }
     // Update is called once per frame
     void Update()

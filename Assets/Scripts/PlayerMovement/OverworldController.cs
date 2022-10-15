@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PhysicalMovementScript : MonoBehaviour
+public class OverworldController : MonoBehaviour
 {
     [SerializeField] Rigidbody2D playerRB;
     [SerializeField] int baseSpeed;
