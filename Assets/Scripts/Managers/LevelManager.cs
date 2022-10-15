@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager instance;
+
     GameObject player;
     // Start is called before the first frame update
     public float cursePeriod;
@@ -16,6 +18,11 @@ public class LevelManager : MonoBehaviour
 
     //Level vars
     public bool isOverWorld;
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
@@ -33,6 +40,11 @@ public class LevelManager : MonoBehaviour
 
     void switchWorld(){
         isOverWorld = !isOverWorld;
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        UpdateTimer();
         if (isOverWorld)
         {
             overworld_controller.enabled = true;
@@ -43,11 +55,6 @@ public class LevelManager : MonoBehaviour
             overworld_controller.enabled = false;
             ghost_controller.enabled = true;
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateTimer();
     }
 
     void UpdateTimer(){
