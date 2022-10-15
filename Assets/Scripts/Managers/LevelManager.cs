@@ -13,8 +13,8 @@ public class LevelManager : MonoBehaviour
     public float timer;
     public bool timerRunning;
 
-    [SerializeField] GhostController ghost_controller;
-    [SerializeField] OverworldController overworld_controller;
+    [SerializeField] PlayerController ghost_controller;
+    [SerializeField] PlayerController overworld_controller;
     [SerializeField] Cinemachine.CinemachineVirtualCamera ghost_camera;
     [SerializeField] Cinemachine.CinemachineVirtualCamera overworld_camera;
 
@@ -28,8 +28,8 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        ghost_controller = GameObject.FindGameObjectWithTag("Player_Ghost").GetComponent<GhostController>();
-        overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<OverworldController>();
+        ghost_controller = GameObject.FindGameObjectWithTag("Player_Ghost").GetComponent<PlayerController>();
+        overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<PlayerController>();
     }
 
 

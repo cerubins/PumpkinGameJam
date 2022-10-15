@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4565931221969825005}
   - component: {fileID: 4565931221969825004}
   - component: {fileID: 4565931221969825003}
-  - component: {fileID: 4565931221969825007}
+  - component: {fileID: -8965753693032633991}
   m_Layer: 3
   m_Name: Physical Form
   m_TagString: Player_Overworld
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4565931221969825007
+--- !u!114 &-8965753693032633991
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,9 +144,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4565931221969825001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4e3d9b27b6bb4af3b2b5e3e12597e6d, type: 3}
+  m_Script: {fileID: 11500000, guid: cbafb44f777180e47872d7174254764c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGhost: 0
   playerRB: {fileID: 4565931221969825003}
   baseSpeed: 7
   jumpForce: 8

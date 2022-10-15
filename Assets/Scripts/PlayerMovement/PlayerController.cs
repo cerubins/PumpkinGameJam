@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OverworldController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    public bool isGhost = false;
+
     [SerializeField] Rigidbody2D playerRB;
     [SerializeField] int baseSpeed;
     [SerializeField] int jumpForce;
@@ -39,7 +41,15 @@ public class OverworldController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            playerRB.velocity += new Vector2(playerRB.velocity.x, jumpForce);
+            if (isGhost)
+            {
+                playerRB.velocity += new Vector2(playerRB.velocity.x, -jumpForce);
+                //Addtl jumping logic here
+            }
+            else if (isGrounded)
+            {
+               playerRB.velocity += new Vector2(playerRB.velocity.x, jumpForce);
+            }
         }
 
     }

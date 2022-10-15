@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4254335151164569778}
   - component: {fileID: 4254335151164569779}
   - component: {fileID: 4254335151164569788}
-  - component: {fileID: 4254335151164569789}
+  - component: {fileID: -6074129980738619491}
   m_Layer: 0
   m_Name: Ghost Form
   m_TagString: Player_Ghost
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4254335151164569789
+--- !u!114 &-6074129980738619491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,12 +144,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4254335151164569790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03dfee3b201be4078bbcb07827f0d6a9, type: 3}
+  m_Script: {fileID: 11500000, guid: cbafb44f777180e47872d7174254764c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGhost: 1
   playerRB: {fileID: 4254335151164569788}
   baseSpeed: 2
   jumpForce: 3
+  layermask: 0
 --- !u!1001 &4454351786942124980
 PrefabInstance:
   m_ObjectHideFlags: 0
