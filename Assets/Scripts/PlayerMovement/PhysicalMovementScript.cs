@@ -16,7 +16,7 @@ public class PhysicalMovementScript : MonoBehaviour
     void Start()
     {
         distanceToGround = GetComponent<Collider2D>().bounds.extents.y;
-        Debug.Log(distanceToGround);
+        layermask = 1 << layermask;
     }
 
     void Update()
@@ -41,7 +41,6 @@ public class PhysicalMovementScript : MonoBehaviour
 
     bool checkGround()
     {
-        layermask = 1 << layermask;
 
         if (Physics2D.Raycast(this.transform.position, Vector2.down, distanceToGround + 0.1f, layermask))
         {
