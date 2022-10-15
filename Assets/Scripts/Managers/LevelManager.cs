@@ -6,11 +6,14 @@ public class LevelManager : MonoBehaviour
 {
     GameObject player;
     // Start is called before the first frame update
+<<<<<<< HEAD
     public float cursePeriod;
 
     public float timer;
     public bool timerRunning;
 
+=======
+>>>>>>> level-manager
 
 
     void Start()
@@ -19,12 +22,21 @@ public class LevelManager : MonoBehaviour
     }
 
 
+<<<<<<< HEAD
     //clocked curseclock, if no need to display things
 /*     IEnumerator CurseClock(float period){
         yield return new WaitForSeconds(period);
         switchWorld();
         CurseClock(period);
     } */
+=======
+    //clocked curseclock
+    IEnumerator CurseClock(float period){
+        yield return new WaitForSeconds(period);
+        switchWorld();
+        CurseClock(period);
+    }
+>>>>>>> level-manager
 
     void switchWorld(){
 
@@ -32,6 +44,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         UpdateTimer();
     }
 
@@ -60,4 +73,8 @@ public class LevelManager : MonoBehaviour
         timer = period;
     }
     
+=======
+        
+    }
+>>>>>>> level-manager
 }
