@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int jumpForce;
     [SerializeField] int layermask;
 
+    Animator animator;
+
     bool isGrounded = false;
 
     float distanceToGround = 0f;
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         playerRB = this.gameObject.GetComponentInParent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     void Start()
@@ -33,10 +36,21 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             playerRB.velocity = new Vector2(baseSpeed, playerRB.velocity.y);
+            animator.SetFloat("speed", 1);
+
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
         }
         else if (Input.GetKey(KeyCode.A))
         {
             playerRB.velocity = new Vector2(-baseSpeed, playerRB.velocity.y);
+            animator.SetFloat("speed", 1);
+
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            animator.SetFloat("speed", 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
