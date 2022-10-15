@@ -24,7 +24,7 @@ public class GhostMovementController : MonoBehaviour
         }
 
         if(Input.GetKeyDown(KeyCode.Space)){
-            playerRB.velocity += new Vector2(playerRB.velocity.x, jumpForce);
+            playerRB.velocity += new Vector2(playerRB.velocity.x, -jumpForce);
         }
 
 
