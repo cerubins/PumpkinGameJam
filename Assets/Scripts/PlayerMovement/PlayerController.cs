@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             animator.SetFloat("speed", 0);
+            playerRB.velocity = new Vector2(0, playerRB.velocity.y);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

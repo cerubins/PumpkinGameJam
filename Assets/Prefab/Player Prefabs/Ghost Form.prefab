@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4254335151164569788}
   - component: {fileID: -6074129980738619491}
   - component: {fileID: 7532592857946708056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ghost Form
   m_TagString: Player_Ghost
   m_Icon: {fileID: 0}
@@ -143,16 +143,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4254335151164569790}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbafb44f777180e47872d7174254764c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isGhost: 1
+  jumpCounter: 0
   playerRB: {fileID: 4254335151164569788}
   baseSpeed: 2
   jumpForce: 3
   layermask: 0
+  isGrounded: 0
 --- !u!95 &7532592857946708056
 Animator:
   serializedVersion: 4
