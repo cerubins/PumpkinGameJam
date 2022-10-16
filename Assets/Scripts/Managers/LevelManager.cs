@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour
         overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<PlayerController>();
         overworld_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = isOverWorld;
         ghost_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = !isOverWorld;
-
+        StartTimer(cursePeriod);
         music_play.Post(gameObject);
     }
 
@@ -98,14 +98,15 @@ public class LevelManager : MonoBehaviour
 
             if(timer == 0){
                 switchWorld();
-                timerRunning = false; 
+                StartTimer(cursePeriod);
             }
             else{
                 if(timer - Time.deltaTime <= 0){
-                    timer = 0;
-                    timerRunning = false;
+                    switchWorld();
+                    StartTimer(cursePeriod);
                 }
-                else{
+                else
+                {
                     timer -= Time.deltaTime;
                 }
             }
@@ -113,7 +114,7 @@ public class LevelManager : MonoBehaviour
 
     }
     //call this from other functions
-    void ResetTimer(float period){
+    void StartTimer(float period){
         timerRunning = true;
         timer = period;
     }
