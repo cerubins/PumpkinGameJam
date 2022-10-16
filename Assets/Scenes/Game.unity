@@ -752,15 +752,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1454015825, guid: befe3f79779442c478fcda13c5a3e677, type: 3}
-      propertyPath: m_text
-      value: 'You died...
-
-'
+    - target: {fileID: 1970392220, guid: befe3f79779442c478fcda13c5a3e677, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 440603796292753721, guid: befe3f79779442c478fcda13c5a3e677, type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 440603796292753721, guid: befe3f79779442c478fcda13c5a3e677, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4301244798589634067, guid: befe3f79779442c478fcda13c5a3e677, type: 3}
       propertyPath: m_RootOrder

@@ -38,6 +38,7 @@ public class LevelManager : MonoBehaviour
     string[] levelSequence = { "Level 1", "Level 2", "Level 3" };
     int currentLevelIndex=2;
 
+    bool gameover = false;
     void Awake()
     {
         instance = this;
@@ -93,12 +94,15 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (!gameover)
         {
-            switchWorld();
-        }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                switchWorld();
+            }
 
-        UpdateTimer();
+            UpdateTimer();
+        }
 
     }
 
@@ -134,6 +138,8 @@ public class LevelManager : MonoBehaviour
         Debug.Log("we won bitches");
         //TEMPORARY, SOME SORT OF UI/TRANSITION?
         //lol we won the game 
+        KillPlayerGameObjects();
+        gameover = true;
         HUD.instance.changeToMenu(HUD.MenuType.END);
     }
 
@@ -141,16 +147,20 @@ public class LevelManager : MonoBehaviour
     {
         stopAll.Post(gameObject);
         Debug.Log("we died bitches");
+        KillPlayerGameObjects();
+        gameover = true;
         HUD.instance.changeToMenu(HUD.MenuType.GAME_OVER);
     }
 
     public void ResetScene()
     {
+        gameover = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void StartGame()
     {
+        gameover = false;
         currentLevelIndex = 0;
         SceneManager.LoadScene(levelSequence[currentLevelIndex]);
     }
@@ -165,6 +175,12 @@ public class LevelManager : MonoBehaviour
             Debug.LogWarning("can't go to the next scene if there's no more!");
             HUD.instance.changeToMenu(HUD.MenuType.END);
         }
+    }
+
+    public void KillPlayerGameObjects()
+    {
+        Destroy(ghost_controller.gameObject);
+        Destroy(overworld_controller.gameObject);
     }
 
     
