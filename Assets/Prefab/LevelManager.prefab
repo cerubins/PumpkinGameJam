@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3418bebfc27e1434799b2f85e347eb56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursePeriod: 0
+  cursePeriod: 5
   timer: 0
   timerRunning: 0
   ghost_controller: {fileID: 0}
@@ -56,6 +56,14 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   spiritworld_switch:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  overworldAmbience_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  overworldAmbience_stop:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

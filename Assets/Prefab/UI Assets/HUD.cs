@@ -23,10 +23,17 @@ public class HUD : MonoBehaviour
     public void changeToMenu(MenuType menuType)
     {
         //Turn off all UI panels
+
+        /*
         foreach (Transform childTransform in transform)
         {
             childTransform.gameObject.active = false;
-        }
+        }*/
+
+        transform.Find("Main Menu").gameObject.active = false;
+        transform.Find("Game Over").gameObject.active = false;
+        transform.Find("End").gameObject.active = false;
+
 
         //Then turn on only the UI panel we want to switch to
         switch (menuType)
