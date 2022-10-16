@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 56490877de480e142967b7147425b41b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rock_platforms_0
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1087
+        width: 1164
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 84, y: -191.5}
+        - {x: 119, y: -155.5}
+        - {x: 140, y: -127.5}
+        - {x: 148, y: -114.5}
+        - {x: 169, y: -91.5}
+        - {x: 198, y: -73.5}
+        - {x: 236, y: -65.5}
+        - {x: 273, y: -60.5}
+        - {x: 296, y: -61.5}
+        - {x: 340, y: -60.5}
+        - {x: 356, y: -54.5}
+        - {x: 383, y: -34.5}
+        - {x: 396, y: -21.5}
+        - {x: 406, y: -8.5}
+        - {x: 415, y: 9.5}
+        - {x: 425, y: 34.5}
+        - {x: 454, y: 47.5}
+        - {x: 493, y: 54.5}
+        - {x: 522, y: 63.5}
+        - {x: 568, y: 90.5}
+        - {x: 577, y: 99.5}
+        - {x: 581, y: 106.5}
+        - {x: 581, y: 130.5}
+        - {x: 579, y: 143.5}
+        - {x: 581, y: 155.5}
+        - {x: 576, y: 166.5}
+        - {x: 560, y: 180.5}
+        - {x: 540, y: 194.5}
+        - {x: 518, y: 201.5}
+        - {x: 478, y: 202.5}
+        - {x: 298, y: 202.5}
+        - {x: 262, y: 197.5}
+        - {x: 210, y: 188.5}
+        - {x: 176, y: 183.5}
+        - {x: 133, y: 172.5}
+        - {x: 103, y: 171.5}
+        - {x: 88, y: 173.5}
+        - {x: 49, y: 185.5}
+        - {x: 31, y: 191.5}
+        - {x: -7, y: 198.5}
+        - {x: -41, y: 197.5}
+        - {x: -75, y: 198.5}
+        - {x: -91, y: 196.5}
+        - {x: -113, y: 198.5}
+        - {x: -131, y: 199.5}
+        - {x: -157, y: 199.5}
+        - {x: -200, y: 201.5}
+        - {x: -312, y: 201.5}
+        - {x: -355, y: 200.5}
+        - {x: -395, y: 193.5}
+        - {x: -433, y: 191.5}
+        - {x: -459, y: 187.5}
+        - {x: -515, y: 187.5}
+        - {x: -545, y: 180.5}
+        - {x: -570, y: 167.5}
+        - {x: -581, y: 152.5}
+        - {x: -581, y: 133.5}
+        - {x: -571, y: 121.5}
+        - {x: -561, y: 115.5}
+        - {x: -540, y: 108.5}
+        - {x: -530, y: 93.5}
+        - {x: -493, y: 59.5}
+        - {x: -489, y: 44.5}
+        - {x: -481, y: 29.5}
+        - {x: -459, y: 16.5}
+        - {x: -387, y: -10.5}
+        - {x: -317, y: -41.5}
+        - {x: -275, y: -58.5}
+        - {x: -231, y: -78.5}
+        - {x: -219, y: -87.5}
+        - {x: -209, y: -99.5}
+        - {x: -206, y: -111.5}
+        - {x: -191, y: -143.5}
+        - {x: -184, y: -152.5}
+        - {x: -165, y: -161.5}
+        - {x: -118, y: -176.5}
+        - {x: -99, y: -179.5}
+        - {x: -84, y: -193.5}
+        - {x: -67, y: -202.5}
+        - {x: 61, y: -202.5}
+      tessellationDetail: 0.1
+      bones: []
+      spriteID: 9bf9dfc3ec18e4524976fd7bc3f32a30
+      internalID: 774869827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_platforms_1
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 853
+        width: 351
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 135.5, y: -12}
+        - {x: 147.5, y: -3}
+        - {x: 172.5, y: 29}
+        - {x: 172.5, y: 44}
+        - {x: 161.5, y: 58}
+        - {x: 154.5, y: 62}
+        - {x: 137.5, y: 66}
+        - {x: 106.5, y: 66}
+        - {x: 68.5, y: 61}
+        - {x: 27.5, y: 60}
+        - {x: -31.5, y: 57}
+        - {x: -54.5, y: 62}
+        - {x: -118.5, y: 66}
+        - {x: -163.5, y: 61}
+        - {x: -172.5, y: 45}
+        - {x: -172.5, y: 20}
+        - {x: -166.5, y: 7}
+        - {x: -115.5, y: -30}
+        - {x: -96.5, y: -30}
+        - {x: -71.5, y: -42}
+        - {x: -48.5, y: -51}
+        - {x: -25.5, y: -53}
+        - {x: -9.5, y: -63}
+        - {x: 29.5, y: -63}
+        - {x: 52.5, y: -44}
+        - {x: 65.5, y: -45}
+        - {x: 104.5, y: -28}
+      tessellationDetail: 0.1
+      bones: []
+      spriteID: 35ea56feaa8d7401eaddb33a0e10f905
+      internalID: -970672117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_platforms_2
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 629
+        width: 901
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 124.5, y: -67}
+        - {x: 148.5, y: -60}
+        - {x: 168.5, y: -56}
+        - {x: 187.5, y: -55}
+        - {x: 232.5, y: -50}
+        - {x: 258.5, y: -48}
+        - {x: 309.5, y: -48}
+        - {x: 322.5, y: -49}
+        - {x: 348.5, y: -46}
+        - {x: 393.5, y: -34}
+        - {x: 426.5, y: -15}
+        - {x: 434.5, y: -7}
+        - {x: 446.5, y: 10}
+        - {x: 447.5, y: 13}
+        - {x: 447.5, y: 28}
+        - {x: 445.5, y: 38}
+        - {x: 432.5, y: 50}
+        - {x: 405.5, y: 66}
+        - {x: 396.5, y: 69}
+        - {x: 366.5, y: 73}
+        - {x: 268.5, y: 73}
+        - {x: 220.5, y: 72}
+        - {x: 167.5, y: 72}
+        - {x: 120.5, y: 67}
+        - {x: 90.5, y: 67}
+        - {x: 53.5, y: 70}
+        - {x: 34.5, y: 70}
+        - {x: -4.5, y: 71}
+        - {x: -58.5, y: 71}
+        - {x: -84.5, y: 70}
+        - {x: -92.5, y: 69}
+        - {x: -191.5, y: 66}
+        - {x: -214.5, y: 74}
+        - {x: -239.5, y: 78}
+        - {x: -283.5, y: 78}
+        - {x: -317.5, y: 75}
+        - {x: -341.5, y: 70}
+        - {x: -371.5, y: 62}
+        - {x: -408.5, y: 49}
+        - {x: -434.5, y: 35}
+        - {x: -447.5, y: 20}
+        - {x: -447.5, y: 6}
+        - {x: -436.5, y: -6}
+        - {x: -407.5, y: -11}
+        - {x: -391.5, y: -15}
+        - {x: -382.5, y: -16}
+        - {x: -363.5, y: -18}
+        - {x: -354.5, y: -18}
+        - {x: -310.5, y: -19}
+        - {x: -276.5, y: -22}
+        - {x: -253.5, y: -22}
+        - {x: -219.5, y: -29}
+        - {x: -185.5, y: -38}
+        - {x: -134.5, y: -61}
+        - {x: -100.5, y: -71}
+        - {x: -62.5, y: -77}
+        - {x: -42.5, y: -78}
+        - {x: 52.5, y: -78}
+        - {x: 60.5, y: -77}
+        - {x: 85.5, y: -74}
+      tessellationDetail: 0.1
+      bones: []
+      spriteID: ed7258921b45f45ba92c081448a7d0b3
+      internalID: 1386504793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_platforms_3
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 302
+        width: 619
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 205.5, y: -51.5}
+        - {x: 227.5, y: -51.5}
+        - {x: 235.5, y: -48.5}
+        - {x: 258.5, y: -31.5}
+        - {x: 280.5, y: -10.5}
+        - {x: 307.5, y: 29.5}
+        - {x: 308.5, y: 33.5}
+        - {x: 308.5, y: 54.5}
+        - {x: 304.5, y: 60.5}
+        - {x: 283.5, y: 75.5}
+        - {x: 258.5, y: 76.5}
+        - {x: 224.5, y: 72.5}
+        - {x: 187.5, y: 72.5}
+        - {x: 166.5, y: 71.5}
+        - {x: 103.5, y: 77.5}
+        - {x: 102.5, y: 77.5}
+        - {x: 73.5, y: 73.5}
+        - {x: 37.5, y: 66.5}
+        - {x: -41.5, y: 67.5}
+        - {x: -113.5, y: 67.5}
+        - {x: -158.5, y: 69.5}
+        - {x: -184.5, y: 75.5}
+        - {x: -203.5, y: 77.5}
+        - {x: -220.5, y: 77.5}
+        - {x: -240.5, y: 76.5}
+        - {x: -278.5, y: 76.5}
+        - {x: -305.5, y: 70.5}
+        - {x: -309.5, y: 55.5}
+        - {x: -309.5, y: 43.5}
+        - {x: -307.5, y: 37.5}
+        - {x: -300.5, y: 27.5}
+        - {x: -290.5, y: 18.5}
+        - {x: -270.5, y: -5.5}
+        - {x: -251.5, y: -24.5}
+        - {x: -229.5, y: -35.5}
+        - {x: -213.5, y: -39.5}
+        - {x: -137.5, y: -44.5}
+        - {x: -108.5, y: -49.5}
+        - {x: -86.5, y: -50.5}
+        - {x: -75.5, y: -55.5}
+        - {x: -30.5, y: -61.5}
+        - {x: 6.5, y: -74.5}
+        - {x: 16.5, y: -78.5}
+        - {x: 58.5, y: -78.5}
+        - {x: 83.5, y: -72.5}
+        - {x: 143.5, y: -51.5}
+        - {x: 172.5, y: -48.5}
+      tessellationDetail: 0.1
+      bones: []
+      spriteID: 6725659a441cc4e93b970021c322ad49
+      internalID: 1635052913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_platforms_4
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 109
+        width: 162
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 75, y: 31}
+        - {x: 58, y: 46}
+        - {x: -63, y: 46}
+        - {x: -81, y: 15}
+        - {x: -81, y: -12}
+        - {x: -66, y: -38}
+        - {x: -47, y: -43}
+        - {x: 55, y: -43}
+        - {x: 72, y: -37}
+        - {x: 81, y: -19}
+        - {x: 81, y: 4}
+      tessellationDetail: 0.1
+      bones: []
+      spriteID: 25c2507df12194f1385689c4a2a1b11a
+      internalID: -1037224928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rock_platforms_4: -1037224928
+      rock_platforms_0: 774869827
+      rock_platforms_2: 1386504793
+      rock_platforms_1: -970672117
+      rock_platforms_3: 1635052913
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

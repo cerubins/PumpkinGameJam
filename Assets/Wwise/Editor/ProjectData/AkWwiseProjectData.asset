@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 0b93ac82e280ab4fa60875de3e42f724
     GuidInternal: 
-    m_lastTime: -8585357172229611605
+    m_lastTime: -8585356748017524284
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,8 +38,28 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 6178348d36a9e14e93cd4e7467cb3d29
     GuidInternal: 
-    m_lastTime: -8585357172229636084
+    m_lastTime: -8585356748018562227
     List:
+    - name: Environment
+      guid: f00e4d67e62e6442a816301c740e8ca2
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6178348d36a9e14e93cd4e7467cb3d29
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 6770de63743de1428269c8b3850f1aea
+      - ElementName: Environment
+        ObjectType: 2
+        guid: f00e4d67e62e6442a816301c740e8ca2
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Environment
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -54,6 +74,80 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: Music
+      guid: f3379d6a129e694e81b256cfe3c6163a
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6178348d36a9e14e93cd4e7467cb3d29
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: f3379d6a129e694e81b256cfe3c6163a
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Music
+    - name: Player
+      guid: fca34460ddb9bb4d992c2786316e9edb
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6178348d36a9e14e93cd4e7467cb3d29
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 6770de63743de1428269c8b3850f1aea
+      - ElementName: Player
+        ObjectType: 2
+        guid: fca34460ddb9bb4d992c2786316e9edb
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/Player
+    - name: SFX
+      guid: 6770de63743de1428269c8b3850f1aea
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6178348d36a9e14e93cd4e7467cb3d29
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 6770de63743de1428269c8b3850f1aea
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX
+    - name: UI
+      guid: c9814ce0823ace43aff7bf3bd7b5fe83
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6178348d36a9e14e93cd4e7467cb3d29
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 6770de63743de1428269c8b3850f1aea
+      - ElementName: UI
+        ObjectType: 2
+        guid: c9814ce0823ace43aff7bf3bd7b5fe83
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/SFX/UI
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
@@ -66,8 +160,22 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: cd03d1f6ef5d9d41842cb64ea748da7a
     GuidInternal: 
-    m_lastTime: -8585357172229618770
-    List: []
+    m_lastTime: -8585356748017531488
+    List:
+    - name: Main
+      guid: da080870e9a6bd4187025a0b4eda7223
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cd03d1f6ef5d9d41842cb64ea748da7a
+      - ElementName: Main
+        ObjectType: 7
+        guid: da080870e9a6bd4187025a0b4eda7223
+      Path: SoundBanks/Default Work Unit/Main
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +188,42 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0921b45dea40034692fdfbb5703c65b5
     GuidInternal: 
-    m_lastTime: -8585357172229639691
-    List: []
+    m_lastTime: -8585356748018638289
+    List:
+    - name: Play_Overworld_Switch
+      guid: 894dc59606fa004595385e6a25345f68
+      id: 1355223307
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Play_Overworld_Switch
+        ObjectType: 3
+        guid: 894dc59606fa004595385e6a25345f68
+      Path: Events/Default Work Unit/Play_Overworld_Switch
+      maxAttenuation: 0
+      maxDuration: 1.875
+      minDuration: 1.875
+    - name: Play_SpiritWorld_Switch
+      guid: 5cbd6b06ec2bd242a9229ca0314077a6
+      id: 2613282610
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Play_SpiritWorld_Switch
+        ObjectType: 3
+        guid: 5cbd6b06ec2bd242a9229ca0314077a6
+      Path: Events/Default Work Unit/Play_SpiritWorld_Switch
+      maxAttenuation: 0
+      maxDuration: 1.875
+      minDuration: 1.875
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +236,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: a2d032ea457eaf4fa35871ac635879cd
     GuidInternal: 
-    m_lastTime: -8585357172229638512
+    m_lastTime: -8585356748018637614
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -108,7 +250,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ddb34398e1f97a4f8781747cf04dc77c
     GuidInternal: 
-    m_lastTime: -8585357172229615917
+    m_lastTime: -8585356748017526271
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -122,7 +264,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: e90b49efa9cb514e88b4407bc6ee801d
     GuidInternal: 
-    m_lastTime: -8585357172229614573
+    m_lastTime: -8585356748017525593
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -136,10 +278,10 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 1068658b6b731740a037247c20c439eb
     GuidInternal: 
-    m_lastTime: -8585357172229612897
+    m_lastTime: -8585356748017524979
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
