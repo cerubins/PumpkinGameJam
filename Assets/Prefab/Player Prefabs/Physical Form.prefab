@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4565931221969825003}
   - component: {fileID: -8965753693032633991}
   - component: {fileID: 1429627245}
+  - component: {fileID: 3702628510512288858}
   m_Layer: 3
   m_Name: Physical Form
   m_TagString: Player_Overworld
@@ -175,6 +176,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3702628510512288858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4565931221969825001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4629eab455042ffa8f90a174e2a7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagingTags:
+  - KillBoundary
 --- !u!1001 &5913778226374388266
 PrefabInstance:
   m_ObjectHideFlags: 0

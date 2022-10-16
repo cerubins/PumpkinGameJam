@@ -11,6 +11,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int baseSpeed;
     [SerializeField] int jumpForce;
     [SerializeField] int layermask;
+    [SerializeField] AK.Wwise.Event overworld_jump;
+    [SerializeField] AK.Wwise.Event spiritworld_jump;
+    [SerializeField] AK.Wwise.Event overworld_walk;
+    [SerializeField] AK.Wwise.Event overworld_idle;
+    [SerializeField] AK.Wwise.Event spiritworld_float;
+    [SerializeField] AK.Wwise.Event spiritworld_idle;
 
     Animator animator;
 
@@ -39,8 +45,7 @@ public class PlayerController : MonoBehaviour
             playerRB.velocity = new Vector2(baseSpeed, playerRB.velocity.y);
             animator.SetFloat("speed", 1);
 
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
-
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;          
         }
         else if (Input.GetKey(KeyCode.A))
         {
@@ -53,6 +58,9 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("speed", 0);
             playerRB.velocity = new Vector2(0, playerRB.velocity.y);
+
+            spiritworld_idle.Post(gameObject);
+            overworld_idle.Post(gameObject);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -62,6 +70,8 @@ public class PlayerController : MonoBehaviour
                 //Addtl jumping logic here
                 if (jumpCounter < 5)
                 {
+                    spiritworld_jump.Post(gameObject);
+
                     playerRB.velocity += new Vector2(playerRB.velocity.x, -(jumpForce-(jumpCounter*0.1f)));
                 }
                 jumpCounter++;
@@ -70,10 +80,28 @@ public class PlayerController : MonoBehaviour
             }
             else if (isGrounded)
             {
+                overworld_jump.Post(gameObject);
+
                playerRB.velocity += new Vector2(playerRB.velocity.x, jumpForce);
                 animator.SetTrigger("jump");
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
+        {
+            if (isGhost)
+            {
+                spiritworld_float.Post(gameObject);
+            }
+            else 
+            {
+                if (checkGround() == true)
+                {
+                    overworld_walk.Post(gameObject);
+                }
+            }
+        }
+
 
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -17,31 +18,40 @@ public class LevelManager : MonoBehaviour
     [SerializeField] PlayerController overworld_controller;
     [SerializeField] Cinemachine.CinemachineVirtualCamera ghost_camera;
     [SerializeField] Cinemachine.CinemachineVirtualCamera overworld_camera;
+
+
+
     [SerializeField] AK.Wwise.Event overworld_switch;
     [SerializeField] AK.Wwise.Event spiritworld_switch;
+    [SerializeField] AK.Wwise.Event overworldAmbience_play;
+    [SerializeField] AK.Wwise.Event overworldAmbience_stop;
 
     //Level vars
-    public bool isOverWorld;
+    public bool isOverWorld=true;
+    string[] levelSequence = { "Level 1", "Level 2", "Level 3" };
+    int currentLevelIndex=2;
 
     void Awake()
     {
         instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
     {
         ghost_controller = GameObject.FindGameObjectWithTag("Player_Ghost").GetComponent<PlayerController>();
         overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<PlayerController>();
+        overworld_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = isOverWorld;
+        ghost_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = !isOverWorld;
+
     }
 
 
     //clocked curseclock, if no need to display things
-/*     IEnumerator CurseClock(float period){
-        yield return new WaitForSeconds(period);
-        switchWorld();
-        CurseClock(period);
-    } */
+    /*     IEnumerator CurseClock(float period){
+            yield return new WaitForSeconds(period);
+            switchWorld();
+            CurseClock(period);
+        } */
 
     void switchWorld(){
         isOverWorld = !isOverWorld;
@@ -49,12 +59,16 @@ public class LevelManager : MonoBehaviour
         {
             overworld_switch.Post(gameObject);
 
+            overworldAmbience_play.Post(gameObject);
+
             overworld_controller.enabled = true;
             ghost_controller.enabled = false;
         }
         else
         {
             spiritworld_switch.Post(gameObject);
+
+            overworldAmbience_stop.Post(gameObject);
 
             overworld_controller.enabled = false;
             ghost_controller.enabled = true;
@@ -104,11 +118,39 @@ public class LevelManager : MonoBehaviour
     public void WonRound() //Called by exit zone when player finishes a round
     {
         Debug.Log("we won bitches");
+        //TEMPORARY, SOME SORT OF UI/TRANSITION?
+        NextScene();
     }
 
     public void Death() //Called by ResetOnTouch
     {
         Debug.Log("we died bitches");
+        HUD.instance.changeToMenu(HUD.MenuType.GAME_OVER);
     }
+
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void StartGame()
+    {
+        currentLevelIndex = 0;
+        SceneManager.LoadScene(levelSequence[currentLevelIndex]);
+    }
+
+    public void NextScene()
+    {
+        if (currentLevelIndex < levelSequence.Length - 1) {
+            SceneManager.LoadScene(levelSequence[currentLevelIndex + 1]);
+        }
+        else //FINISHES SEQUENCE
+        {
+            Debug.LogWarning("can't go to the next scene if there's no more!");
+            HUD.instance.changeToMenu(HUD.MenuType.END);
+        }
+    }
+
+    
 
 }

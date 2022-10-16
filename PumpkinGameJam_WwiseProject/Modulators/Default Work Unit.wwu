@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A888BE05-3920-4F4C-9BFD-808C85AB7BDD}" SchemaVersion="103">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{A888BE05-3920-4F4C-9BFD-808C85AB7BDD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A888BE05-3920-4F4C-9BFD-808C85AB7BDD}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="FloatLFO" ID="{196065DA-2685-42EB-9FD9-745E47B81D85}" ShortID="151306452">
+					<PropertyList>
+						<Property Name="LfoAttack" Type="Real64" Value="1"/>
+						<Property Name="LfoDepth" Type="Real64" Value="70"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="1.5"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 6178348d36a9e14e93cd4e7467cb3d29
     GuidInternal: 
-    m_lastTime: -8585356748018562227
+    m_lastTime: -8585356729135353747
     List:
     - name: Environment
       guid: f00e4d67e62e6442a816301c740e8ca2
@@ -160,7 +160,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: cd03d1f6ef5d9d41842cb64ea748da7a
     GuidInternal: 
-    m_lastTime: -8585356748017531488
+    m_lastTime: -8585356740345781805
     List:
     - name: Main
       guid: da080870e9a6bd4187025a0b4eda7223
@@ -188,8 +188,85 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0921b45dea40034692fdfbb5703c65b5
     GuidInternal: 
-    m_lastTime: -8585356748018638289
+    m_lastTime: -8585356737182036122
     List:
+    - name: Locomotion
+      guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      id: 556887514
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Locomotion
+        ObjectType: 4
+        guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      Path: Events/Default Work Unit/Locomotion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Overworld_Ambience
+      guid: 6d739e68c305764b99cb18499c51b818
+      id: 1345567807
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      - ElementName: Play_Overworld_Ambience
+        ObjectType: 3
+        guid: 6d739e68c305764b99cb18499c51b818
+      Path: Events/Default Work Unit/Triggers/Play_Overworld_Ambience
+      maxAttenuation: 0
+      maxDuration: 38
+      minDuration: 38
+    - name: Play_Overworld_Footsteps
+      guid: 72f1d7d5ac8d4b44bf1da42c51b6a3c4
+      id: 4115298192
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Locomotion
+        ObjectType: 4
+        guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      - ElementName: Play_Overworld_Footsteps
+        ObjectType: 3
+        guid: 72f1d7d5ac8d4b44bf1da42c51b6a3c4
+      Path: Events/Default Work Unit/Locomotion/Play_Overworld_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.6875
+      minDuration: 0.5
+    - name: Play_Overworld_Jump
+      guid: 2a8f6f7bb5507344b4e750006a515c68
+      id: 4002722943
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Locomotion
+        ObjectType: 4
+        guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      - ElementName: Play_Overworld_Jump
+        ObjectType: 3
+        guid: 2a8f6f7bb5507344b4e750006a515c68
+      Path: Events/Default Work Unit/Locomotion/Play_Overworld_Jump
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Play_Overworld_Switch
       guid: 894dc59606fa004595385e6a25345f68
       id: 1355223307
@@ -200,13 +277,56 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
       - ElementName: Play_Overworld_Switch
         ObjectType: 3
         guid: 894dc59606fa004595385e6a25345f68
-      Path: Events/Default Work Unit/Play_Overworld_Switch
+      Path: Events/Default Work Unit/Triggers/Play_Overworld_Switch
       maxAttenuation: 0
       maxDuration: 1.875
       minDuration: 1.875
+    - name: Play_SpiritWorld_Float
+      guid: f7a6ad794f8e304a9d356152fbbc315f
+      id: 2931362732
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Locomotion
+        ObjectType: 4
+        guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      - ElementName: Play_SpiritWorld_Float
+        ObjectType: 3
+        guid: f7a6ad794f8e304a9d356152fbbc315f
+      Path: Events/Default Work Unit/Locomotion/Play_SpiritWorld_Float
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SpiritWorld_Jump
+      guid: e563f850ffb3d244bb86e1231ea0c83d
+      id: 773934322
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Locomotion
+        ObjectType: 4
+        guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      - ElementName: Play_SpiritWorld_Jump
+        ObjectType: 3
+        guid: e563f850ffb3d244bb86e1231ea0c83d
+      Path: Events/Default Work Unit/Locomotion/Play_SpiritWorld_Jump
+      maxAttenuation: 0
+      maxDuration: 0.348485
+      minDuration: 0.319562
     - name: Play_SpiritWorld_Switch
       guid: 5cbd6b06ec2bd242a9229ca0314077a6
       id: 2613282610
@@ -217,13 +337,93 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
       - ElementName: Play_SpiritWorld_Switch
         ObjectType: 3
         guid: 5cbd6b06ec2bd242a9229ca0314077a6
-      Path: Events/Default Work Unit/Play_SpiritWorld_Switch
+      Path: Events/Default Work Unit/Triggers/Play_SpiritWorld_Switch
       maxAttenuation: 0
       maxDuration: 1.875
       minDuration: 1.875
+    - name: Stop_Overworld_Ambience
+      guid: 7c33abee5c03b249a683d7869f89f6a1
+      id: 431072021
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      - ElementName: Stop_Overworld_Ambience
+        ObjectType: 3
+        guid: 7c33abee5c03b249a683d7869f89f6a1
+      Path: Events/Default Work Unit/Triggers/Stop_Overworld_Ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Overworld_Footsteps
+      guid: 5658f8e37f37d343945dee2c5bb0fc0a
+      id: 1475340186
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Locomotion
+        ObjectType: 4
+        guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      - ElementName: Stop_Overworld_Footsteps
+        ObjectType: 3
+        guid: 5658f8e37f37d343945dee2c5bb0fc0a
+      Path: Events/Default Work Unit/Locomotion/Stop_Overworld_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_SpiritWorld_Float
+      guid: 1dadb284dde4a54f885cb7b8d1dad847
+      id: 32999774
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Locomotion
+        ObjectType: 4
+        guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
+      - ElementName: Stop_SpiritWorld_Float
+        ObjectType: 3
+        guid: 1dadb284dde4a54f885cb7b8d1dad847
+      Path: Events/Default Work Unit/Locomotion/Stop_SpiritWorld_Float
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Triggers
+      guid: 3e6b386540e704498e6c09d838bf64a6
+      id: 2465693650
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      Path: Events/Default Work Unit/Triggers
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -281,7 +481,7 @@ MonoBehaviour:
     m_lastTime: -8585356748017524979
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000800000009000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -11,17 +11,49 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="170836211">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3248072283">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1375960240">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2310355003">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1355223307" Name="Play_Overworld_Switch" ObjectPath="\Events\Default Work Unit\Play_Overworld_Switch" DurationType="OneShot" DurationMin="1.875" DurationMax="1.875">
+				<Event Id="1345567807" Name="Play_Overworld_Ambience" ObjectPath="\Events\Default Work Unit\Triggers\Play_Overworld_Ambience" DurationType="OneShot" DurationMin="38." DurationMax="38.">
+					<IncludedMemoryFiles>
+						<File Id="337487361" Language="SFX">
+							<ShortName>OverworldAmbience.wav</ShortName>
+							<Path>SFX/OverworldAmbience_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4115298192" Name="Play_Overworld_Footsteps" ObjectPath="\Events\Default Work Unit\Locomotion\Play_Overworld_Footsteps" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="177870062" Language="SFX">
+							<ShortName>OverworldFootstep_03.wav</ShortName>
+							<Path>SFX/OverworldFootstep_03_50A1768F.wem</Path>
+						</File>
+						<File Id="280805609" Language="SFX">
+							<ShortName>OverworldFootstep_02.wav</ShortName>
+							<Path>SFX/OverworldFootstep_02_50A1768F.wem</Path>
+						</File>
+						<File Id="328921704" Language="SFX">
+							<ShortName>OverworldFootstep_01.wav</ShortName>
+							<Path>SFX/OverworldFootstep_01_50A1768F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4002722943" Name="Play_Overworld_Jump" ObjectPath="\Events\Default Work Unit\Locomotion\Play_Overworld_Jump" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="886688993" Language="SFX">
+							<ShortName>OverworldJump.wav</ShortName>
+							<Path>SFX/OverworldJump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1355223307" Name="Play_Overworld_Switch" ObjectPath="\Events\Default Work Unit\Triggers\Play_Overworld_Switch" DurationType="OneShot" DurationMin="1.875" DurationMax="1.875">
 					<IncludedMemoryFiles>
 						<File Id="679538964" Language="SFX">
 							<ShortName>OverworldSwitch.wav</ShortName>
@@ -29,7 +61,23 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2613282610" Name="Play_SpiritWorld_Switch" ObjectPath="\Events\Default Work Unit\Play_SpiritWorld_Switch" DurationType="OneShot" DurationMin="1.875" DurationMax="1.875">
+				<Event Id="2931362732" Name="Play_SpiritWorld_Float" ObjectPath="\Events\Default Work Unit\Locomotion\Play_SpiritWorld_Float" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1003554155" Language="SFX">
+							<ShortName>SpiritWorldFloat.wav</ShortName>
+							<Path>SFX/SpiritWorldFloat_EAB2CC33.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="773934322" Name="Play_SpiritWorld_Jump" ObjectPath="\Events\Default Work Unit\Locomotion\Play_SpiritWorld_Jump" DurationType="OneShot" DurationMin="0.319562" DurationMax="0.348485">
+					<IncludedMemoryFiles>
+						<File Id="1045310187" Language="SFX">
+							<ShortName>SpiritWorldJump.wav</ShortName>
+							<Path>SFX/SpiritWorldJump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2613282610" Name="Play_SpiritWorld_Switch" ObjectPath="\Events\Default Work Unit\Triggers\Play_SpiritWorld_Switch" DurationType="OneShot" DurationMin="1.875" DurationMax="1.875">
 					<IncludedMemoryFiles>
 						<File Id="973690474" Language="SFX">
 							<ShortName>SpiritWorldSwitch.wav</ShortName>
@@ -37,6 +85,9 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="431072021" Name="Stop_Overworld_Ambience" ObjectPath="\Events\Default Work Unit\Triggers\Stop_Overworld_Ambience" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1475340186" Name="Stop_Overworld_Footsteps" ObjectPath="\Events\Default Work Unit\Locomotion\Stop_Overworld_Footsteps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="32999774" Name="Stop_SpiritWorld_Float" ObjectPath="\Events\Default Work Unit\Locomotion\Stop_SpiritWorld_Float" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
