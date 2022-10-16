@@ -5,7 +5,7 @@ using UnityEngine;
 public class HUD : MonoBehaviour
 {
     public static HUD instance;
-    public enum MenuType {GAME_OVER, MAIN_MENU, NONE};
+    public enum MenuType { GAME_OVER, MAIN_MENU, END, NONE };
     public MenuType startingMenuType = MenuType.NONE;
 
     void Awake()
@@ -17,13 +17,13 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void changeToMenu(MenuType menuType)
     {
         //Turn off all UI panels
-        foreach(Transform childTransform in transform)
+        foreach (Transform childTransform in transform)
         {
             childTransform.gameObject.active = false;
         }
@@ -37,6 +37,9 @@ public class HUD : MonoBehaviour
             case MenuType.GAME_OVER:
                 transform.Find("Game Over").gameObject.active = true;
                 break;
+            case MenuType.END:
+                transform.Find("End").gameObject.active = true;
+                break;
             default:
                 // code block
                 break;
@@ -47,6 +50,12 @@ public class HUD : MonoBehaviour
     public void ResetScene()
     {
         LevelManager.instance.ResetScene();
+        changeToMenu(MenuType.NONE);
+    }
+
+    public void ResetGame()
+    {
+        LevelManager.instance.StartGame();
         changeToMenu(MenuType.NONE);
     }
 

@@ -28,6 +28,8 @@ public class LevelManager : MonoBehaviour
 
     //Level vars
     public bool isOverWorld=true;
+    string[] levelSequence = { "Level 1", "Level 2", "Level 3" };
+    int currentLevelIndex=2;
 
     void Awake()
     {
@@ -116,6 +118,8 @@ public class LevelManager : MonoBehaviour
     public void WonRound() //Called by exit zone when player finishes a round
     {
         Debug.Log("we won bitches");
+        //TEMPORARY, SOME SORT OF UI/TRANSITION?
+        NextScene();
     }
 
     public void Death() //Called by ResetOnTouch
@@ -128,5 +132,25 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void StartGame()
+    {
+        currentLevelIndex = 0;
+        SceneManager.LoadScene(levelSequence[currentLevelIndex]);
+    }
+
+    public void NextScene()
+    {
+        if (currentLevelIndex < levelSequence.Length - 1) {
+            SceneManager.LoadScene(levelSequence[currentLevelIndex + 1]);
+        }
+        else //FINISHES SEQUENCE
+        {
+            Debug.LogWarning("can't go to the next scene if there's no more!");
+            HUD.instance.changeToMenu(HUD.MenuType.END);
+        }
+    }
+
+    
 
 }
