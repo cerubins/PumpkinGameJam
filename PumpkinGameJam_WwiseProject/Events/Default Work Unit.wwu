@@ -10,8 +10,8 @@
 								<Action Name="" ID="{09D9C145-A240-44EA-8131-650F55852166}" ShortID="293399014">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -139,6 +139,45 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Overworld_Ambience" ID="{777D0BC9-9087-4821-B40F-DE20176B3818}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Music" ID="{0A71D343-ECF7-454D-89CC-AF9A88B631B0}">
+							<ChildrenList>
+								<Action Name="" ID="{30BC534D-A00D-4553-B937-8435773933DE}" ShortID="214301891">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Test" ID="{CCF5C7BC-3E16-4DC3-8940-16929345E996}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Resume_Music" ID="{620C211E-64C1-46D6-AF8D-4C2BCB752F0C}">
+							<ChildrenList>
+								<Action Name="" ID="{4F18E983-4E75-43F3-8C54-46F0A860D6AA}" ShortID="561903073">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Test" ID="{CCF5C7BC-3E16-4DC3-8940-16929345E996}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_Music" ID="{44B9CE2B-0D31-4277-9C78-817375F03374}">
+							<ChildrenList>
+								<Action Name="" ID="{FBE64785-47E1-4B13-BB2F-C371A4BC795A}" ShortID="132044665">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Test" ID="{CCF5C7BC-3E16-4DC3-8940-16929345E996}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

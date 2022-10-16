@@ -130,7 +130,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -167,7 +167,7 @@
 											<Modifier Name="" ID="{F2594269-9EF3-4A77-8FE1-D3E6E20D97E4}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -254,7 +254,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -369,7 +369,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -480,6 +480,38 @@
 							<ObjectRef Name="Music" ID="{6A9D37F3-9E12-4E69-81B2-56CFE3C6163A}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Test" ID="{CCF5C7BC-3E16-4DC3-8940-16929345E996}" ShortID="1029175048">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gibby_Ambient_02" ID="{4E90BDF7-25AE-4EB8-8120-22BD3DDA64D0}">
+									<Language>SFX</Language>
+									<AudioFile>Gibby_Ambient_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="868946288"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Gibby_Ambient_02" ID="{4E90BDF7-25AE-4EB8-8120-22BD3DDA64D0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{F608C1FD-33A2-4AA4-9656-FC2A6B53A170}" ShortID="767265827">
