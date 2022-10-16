@@ -65,11 +65,13 @@ public class PlayerController : MonoBehaviour
                     playerRB.velocity += new Vector2(playerRB.velocity.x, -(jumpForce-(jumpCounter*0.1f)));
                 }
                 jumpCounter++;
+                animator.SetTrigger("jump");
 
             }
             else if (isGrounded)
             {
                playerRB.velocity += new Vector2(playerRB.velocity.x, jumpForce);
+                animator.SetTrigger("jump");
             }
         }
 
