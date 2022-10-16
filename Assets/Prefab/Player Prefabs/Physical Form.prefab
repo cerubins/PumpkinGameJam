@@ -181,6 +181,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: eac1fbfdcf91749428796893efdc5ff7, type: 2}
+  ghost: {fileID: 4254335151164569790, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+  pumpkin: {fileID: 4565931221969825001}
   isGrounded: 0
 --- !u!95 &1429627245
 Animator:

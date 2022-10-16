@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AK.Wwise.Event spiritworld_float;
     [SerializeField] AK.Wwise.Event spiritworld_idle;
 
+    [SerializeField] GameObject ghost;
+    [SerializeField] GameObject pumpkin;
+
     private bool isWalking = false;
 
     Animator animator;
@@ -103,8 +106,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (isWalking && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) 
         {
-            spiritworld_idle.Post(gameObject);
-            overworld_idle.Post(gameObject);
+            spiritworld_idle.Post(ghost);
+            overworld_idle.Post(pumpkin);
 
             isWalking = false;
         }
