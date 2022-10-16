@@ -23,6 +23,7 @@ public class LevelManager : MonoBehaviour
 
     void Awake()
     {
+        instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -91,6 +92,12 @@ public class LevelManager : MonoBehaviour
     void ResetTimer(float period){
         timerRunning = true;
         timer = period;
+    }
+
+    //Game Flow Funcs
+    public void WonRound() //Called by exit zone when player finishes a round
+    {
+        Debug.Log("we won bitches");
     }
     
 }
