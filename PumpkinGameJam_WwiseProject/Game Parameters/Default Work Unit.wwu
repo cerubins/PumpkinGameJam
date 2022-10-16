@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EA32D0A2-7E45-4FAF-A358-71AC635879CD}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{EA32D0A2-7E45-4FAF-A358-71AC635879CD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EA32D0A2-7E45-4FAF-A358-71AC635879CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Grounded" ID="{F3C55CD8-12E1-4C92-8FF4-F188CF456019}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

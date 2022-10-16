@@ -54,9 +54,29 @@ MonoBehaviour:
   overworld_switch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4270910302574412b986541135127f31, type: 2}
   spiritworld_switch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 0a3eec843e7044e2388531a98d83f7ff, type: 2}
+  overworldAmbience_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9002dc602735e4c30b04db7f787be478, type: 2}
+  overworldAmbience_stop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4698fe36caf5f45be8493a447b9e849d, type: 2}
+  music_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 788ff80038bac46c2be8e0e5434b4364, type: 2}
+  music_pause:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 599b48f38d8f145f1849d0968893a33d, type: 2}
+  music_resume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5541fba48211540f2ad88d4a86311bf2, type: 2}
   isOverWorld: 1

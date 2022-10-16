@@ -175,6 +175,18 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4698fe36caf5f45be8493a447b9e849d, type: 2}
+  music_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 788ff80038bac46c2be8e0e5434b4364, type: 2}
+  music_pause:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 599b48f38d8f145f1849d0968893a33d, type: 2}
+  music_resume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5541fba48211540f2ad88d4a86311bf2, type: 2}
   isOverWorld: 0
 --- !u!4 &296309280
 Transform:
@@ -648,7 +660,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488723678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.72, y: 0.17, z: -10}
+  m_LocalPosition: {x: -3.590426, y: -10.942346, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

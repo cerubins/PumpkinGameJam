@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int baseSpeed;
     [SerializeField] int jumpForce;
     [SerializeField] int layermask;
+
+
     [SerializeField] AK.Wwise.Event overworld_jump;
     [SerializeField] AK.Wwise.Event spiritworld_jump;
     [SerializeField] AK.Wwise.Event overworld_walk;
@@ -45,7 +47,8 @@ public class PlayerController : MonoBehaviour
             playerRB.velocity = new Vector2(baseSpeed, playerRB.velocity.y);
             animator.SetFloat("speed", 1);
 
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;          
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+         
         }
         else if (Input.GetKey(KeyCode.A))
         {
@@ -53,6 +56,7 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("speed", 1);
 
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
+
         }
         else
         {
@@ -61,6 +65,7 @@ public class PlayerController : MonoBehaviour
 
             spiritworld_idle.Post(gameObject);
             overworld_idle.Post(gameObject);
+
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -86,8 +91,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("jump");
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
         {
             if (isGhost)
             {
@@ -95,13 +99,9 @@ public class PlayerController : MonoBehaviour
             }
             else 
             {
-                if (checkGround() == true)
-                {
-                    overworld_walk.Post(gameObject);
-                }
+                overworld_walk.Post(gameObject);
             }
         }
-
 
     }
 
