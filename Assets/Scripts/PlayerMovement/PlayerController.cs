@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
                 {
                     spiritworld_jump.Post(gameObject);
 
-                    playerRB.velocity += new Vector2(playerRB.velocity.x, -(jumpForce-(jumpCounter*0.1f)));
+                    playerRB.velocity += new Vector2(playerRB.velocity.x, -(jumpForce));
                 }
                 jumpCounter++;
                 animator.SetTrigger("jump");
