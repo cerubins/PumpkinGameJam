@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField] PlayerController overworld_controller;
     [SerializeField] Cinemachine.CinemachineVirtualCamera ghost_camera;
     [SerializeField] Cinemachine.CinemachineVirtualCamera overworld_camera;
+
+
+
     [SerializeField] AK.Wwise.Event overworld_switch;
     [SerializeField] AK.Wwise.Event spiritworld_switch;
 
@@ -109,6 +113,11 @@ public class LevelManager : MonoBehaviour
     public void Death() //Called by ResetOnTouch
     {
         Debug.Log("we died bitches");
+    }
+
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }
