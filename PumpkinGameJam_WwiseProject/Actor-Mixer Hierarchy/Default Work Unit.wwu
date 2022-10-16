@@ -352,6 +352,29 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<Sound Name="Death" ID="{983A61C6-5ED1-47E8-ADD6-4BF09948A7A7}" ShortID="933140866">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Death" ID="{D807FCEA-2B4A-404A-9859-126B9B3B4AF1}">
+									<Language>SFX</Language>
+									<AudioFile>Death.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="477701314"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Death" ID="{D807FCEA-2B4A-404A-9859-126B9B3B4AF1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
@@ -483,15 +506,21 @@
 					<ChildrenList>
 						<Sound Name="Spiritworld_Music" ID="{312FB2D6-65A6-41AB-93B8-7E1A1AB32726}" ShortID="918875405">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
@@ -513,6 +542,7 @@
 						</Sound>
 						<Sound Name="Overworld_Music" ID="{8D4538F0-168E-4F5C-BC8A-22AEC4D67000}" ShortID="685473684">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>

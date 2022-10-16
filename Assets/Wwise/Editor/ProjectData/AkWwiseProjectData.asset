@@ -188,7 +188,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0921b45dea40034692fdfbb5703c65b5
     GuidInternal: 
-    m_lastTime: -8585356548790613669
+    m_lastTime: -8585356535227685658
     List:
     - name: Locomotion
       guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
@@ -284,6 +284,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Death
+      guid: a63be106d77e9b47b51d53db618679d1
+      id: 1172822028
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      - ElementName: Play_Death
+        ObjectType: 3
+        guid: a63be106d77e9b47b51d53db618679d1
+      Path: Events/Default Work Unit/Triggers/Play_Death
+      maxAttenuation: 0
+      maxDuration: 1.9375
+      minDuration: 1.9375
     - name: Play_Music
       guid: 43d3710af7ec4d4589ccaf9a88b631b0
       id: 2932040671

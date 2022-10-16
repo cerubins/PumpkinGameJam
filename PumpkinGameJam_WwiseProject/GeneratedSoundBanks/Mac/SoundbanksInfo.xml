@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3147128223">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2538185062">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -24,6 +24,14 @@
 				<Event Id="2735935537" Name="Pause_Music" ObjectPath="\Events\Default Work Unit\Triggers\Pause_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1913357618" Name="Pause_Overworld_Music" ObjectPath="\Events\Default Work Unit\Music\Pause_Overworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="613586233" Name="Pause_Spiritworld_Music" ObjectPath="\Events\Default Work Unit\Music\Pause_Spiritworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1172822028" Name="Play_Death" ObjectPath="\Events\Default Work Unit\Triggers\Play_Death" DurationType="OneShot" DurationMin="1.9375" DurationMax="1.9375">
+					<IncludedMemoryFiles>
+						<File Id="477701314" Language="SFX">
+							<ShortName>Death.wav</ShortName>
+							<Path>SFX/Death_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Triggers\Play_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1345567807" Name="Play_Overworld_Ambience" ObjectPath="\Events\Default Work Unit\Triggers\Play_Overworld_Ambience" DurationType="OneShot" DurationMin="38." DurationMax="38.">
 					<IncludedMemoryFiles>
@@ -57,11 +65,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="542889596" Name="Play_Overworld_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Overworld_Music" DurationType="OneShot" DurationMin="64.064247" DurationMax="64.064247">
+				<Event Id="542889596" Name="Play_Overworld_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Overworld_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="715608847" Language="SFX">
 							<ShortName>Overworld_Music.wav</ShortName>
-							<Path>SFX/Overworld_Music_10C4C929.wem</Path>
+							<Path>SFX/Overworld_Music_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -89,11 +97,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="498723543" Name="Play_Spiritworld_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Spiritworld_Music" DurationType="OneShot" DurationMin="60.06752" DurationMax="60.06752">
+				<Event Id="498723543" Name="Play_Spiritworld_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Spiritworld_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1064847859" Language="SFX">
 							<ShortName>SpiritWorld_Music.wav</ShortName>
-							<Path>SFX/SpiritWorld_Music_10C4C929.wem</Path>
+							<Path>SFX/SpiritWorld_Music_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
