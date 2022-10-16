@@ -155,6 +155,30 @@ MonoBehaviour:
   baseSpeed: 7
   jumpForce: 8
   layermask: 0
+  overworld_jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0d62f67570bce4a458e229051dafe726, type: 2}
+  spiritworld_jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cbe00ddc095124b878866a0a25542a74, type: 2}
+  overworld_walk:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3ea96e119e8424409a98039952a0131a, type: 2}
+  overworld_idle:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 382b01290c0db449ea4ba42a4f7f9843, type: 2}
+  spiritworld_float:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9779c0b8407c4322b330dd9355d0158, type: 2}
+  spiritworld_idle:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eac1fbfdcf91749428796893efdc5ff7, type: 2}
   isGrounded: 0
 --- !u!95 &1429627245
 Animator:

@@ -28,6 +28,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event music_play;
     [SerializeField] AK.Wwise.Event music_pause;
     [SerializeField] AK.Wwise.Event music_resume;
+    [SerializeField] AK.Wwise.Event stopAll;
 
     //Level vars
     public bool isOverWorld=true;
@@ -130,6 +131,7 @@ public class LevelManager : MonoBehaviour
 
     public void Death() //Called by ResetOnTouch
     {
+        stopAll.Post(gameObject);
         Debug.Log("we died bitches");
         HUD.instance.changeToMenu(HUD.MenuType.GAME_OVER);
     }

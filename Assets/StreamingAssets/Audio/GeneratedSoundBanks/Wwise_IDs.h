@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_SPIRITWORLD_JUMP = 773934322U;
         static const AkUniqueID PLAY_SPIRITWORLD_SWITCH = 2613282610U;
         static const AkUniqueID RESUME_MUSIC = 2940177080U;
+        static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOP_OVERWORLD_AMBIENCE = 431072021U;
         static const AkUniqueID STOP_OVERWORLD_FOOTSTEPS = 1475340186U;
         static const AkUniqueID STOP_SPIRITWORLD_FLOAT = 32999774U;
