@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2538185062">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3179455549">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -29,6 +29,14 @@
 						<File Id="477701314" Language="SFX">
 							<ShortName>Death.wav</ShortName>
 							<Path>SFX/Death_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2228153899" Name="Play_Menu_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Menu_Music" DurationType="OneShot" DurationMin="38.464249" DurationMax="38.464249">
+					<IncludedMemoryFiles>
+						<File Id="662542198" Language="SFX">
+							<ShortName>Menu_Music.wav</ShortName>
+							<Path>SFX/Menu_Music_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -117,6 +125,7 @@
 				<Event Id="2096461675" Name="Resume_Overworld_Music" ObjectPath="\Events\Default Work Unit\Music\Resume_Overworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="186887628" Name="Resume_Spiritworld_Music" ObjectPath="\Events\Default Work Unit\Music\Resume_Spiritworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Triggers\Stop_All" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3945748993" Name="Stop_Menu_Music" ObjectPath="\Events\Default Work Unit\Music\Stop_Menu_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="431072021" Name="Stop_Overworld_Ambience" ObjectPath="\Events\Default Work Unit\Triggers\Stop_Overworld_Ambience" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1475340186" Name="Stop_Overworld_Footsteps" ObjectPath="\Events\Default Work Unit\Locomotion\Stop_Overworld_Footsteps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="32999774" Name="Stop_SpiritWorld_Float" ObjectPath="\Events\Default Work Unit\Locomotion\Stop_SpiritWorld_Float" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>

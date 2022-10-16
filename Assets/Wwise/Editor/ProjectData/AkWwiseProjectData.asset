@@ -188,7 +188,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0921b45dea40034692fdfbb5703c65b5
     GuidInternal: 
-    m_lastTime: -8585356535227685658
+    m_lastTime: -8585356530874987979
     List:
     - name: Locomotion
       guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
@@ -402,8 +402,8 @@ MonoBehaviour:
         guid: 9db329b6ff06e345a92bf40580ba85df
       Path: Events/Default Work Unit/Music/Play_Overworld_Music
       maxAttenuation: 0
-      maxDuration: 64.06425
-      minDuration: 64.06425
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Overworld_Switch
       guid: 894dc59606fa004595385e6a25345f68
       id: 1355223307
@@ -482,8 +482,8 @@ MonoBehaviour:
         guid: 281bda0fc37a4f4390e484b4256dde60
       Path: Events/Default Work Unit/Music/Play_Spiritworld_Music
       maxAttenuation: 0
-      maxDuration: 60.06752
-      minDuration: 60.06752
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SpiritWorld_Switch
       guid: 5cbd6b06ec2bd242a9229ca0314077a6
       id: 2613282610
@@ -718,7 +718,7 @@ MonoBehaviour:
     m_lastTime: -8585357172229612897
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000d00000012000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000c0000000d00000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

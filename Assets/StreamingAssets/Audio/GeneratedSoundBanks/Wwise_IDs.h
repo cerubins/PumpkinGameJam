@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PAUSE_OVERWORLD_MUSIC = 1913357618U;
         static const AkUniqueID PAUSE_SPIRITWORLD_MUSIC = 613586233U;
         static const AkUniqueID PLAY_DEATH = 1172822028U;
+        static const AkUniqueID PLAY_MENU_MUSIC = 2228153899U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_OVERWORLD_AMBIENCE = 1345567807U;
         static const AkUniqueID PLAY_OVERWORLD_FOOTSTEPS = 4115298192U;
@@ -31,6 +32,7 @@ namespace AK
         static const AkUniqueID RESUME_OVERWORLD_MUSIC = 2096461675U;
         static const AkUniqueID RESUME_SPIRITWORLD_MUSIC = 186887628U;
         static const AkUniqueID STOP_ALL = 452547817U;
+        static const AkUniqueID STOP_MENU_MUSIC = 3945748993U;
         static const AkUniqueID STOP_OVERWORLD_AMBIENCE = 431072021U;
         static const AkUniqueID STOP_OVERWORLD_FOOTSTEPS = 1475340186U;
         static const AkUniqueID STOP_SPIRITWORLD_FLOAT = 32999774U;
