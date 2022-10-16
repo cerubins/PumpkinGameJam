@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
                     playerRB.velocity += new Vector2(playerRB.velocity.x, -(jumpForce-(jumpCounter*0.1f)));
                 }
                 jumpCounter++;
+                animator.SetTrigger("jump");
 
             }
             else if (isGrounded)
@@ -82,6 +83,7 @@ public class PlayerController : MonoBehaviour
                 overworld_jump.Post(gameObject);
 
                playerRB.velocity += new Vector2(playerRB.velocity.x, jumpForce);
+                animator.SetTrigger("jump");
             }
         }
 
