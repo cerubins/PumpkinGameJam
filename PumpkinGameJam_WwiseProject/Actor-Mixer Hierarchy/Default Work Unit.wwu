@@ -14,6 +14,68 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="SpiritWorld_Float" ID="{E6A7599C-A9FE-4256-8E3B-2DA766EC0609}" ShortID="55342188">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{26830778-BCBB-4A2C-8E5D-171895874D39}" ShortID="572783766">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="FloatLFO" ID="{196065DA-2685-42EB-9FD9-745E47B81D85}" WorkUnitID="{A888BE05-3920-4F4C-9BFD-808C85AB7BDD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{08BAA7C6-DAD4-4574-80C1-23F328BB045A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-465</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>232</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{3A83F42C-CCB0-4AF4-822C-945BEE8122E3}" ShortID="86728714">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="FloatLFO" ID="{196065DA-2685-42EB-9FD9-745E47B81D85}" WorkUnitID="{A888BE05-3920-4F4C-9BFD-808C85AB7BDD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F7759D2D-5459-40A6-8B5B-79EFC20E48E5}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3.06052</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>1.00333</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
@@ -24,6 +86,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SpiritWorldFloat" ID="{FD73E5D0-EF97-4DE9-BCD1-5E211BB1F01A}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="43.421"/>
+										<Property Name="CrossfadeShape" Type="int16" Value="2"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.499"/>
+										<Property Name="LoopEnd" Type="Real64" Value="0.89"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SpiritWorldFloat.wav</AudioFile>
 									<MediaIDList>
@@ -37,6 +106,29 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SpiritWorld_Jump" ID="{4DB8BB23-530C-4651-877D-07ACD1540B0C}" ShortID="507161918">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-500</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{51702D47-CB5E-427E-8BB3-CC27A15DE929}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
@@ -60,6 +152,36 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Overworld_Jump" ID="{F8A27B6D-33D6-464C-B4E7-CC7252A74DC9}" ShortID="162306431">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F2594269-9EF3-4A77-8FE1-D3E6E20D97E4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{27AA781C-C561-45A7-8BD5-873DA01A18F9}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
@@ -83,6 +205,51 @@
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" ShortID="740688240">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5A6927CD-DB8F-40E5-AA95-B13FAFB0A690}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F1DE673A-0B18-4D6D-8866-6B6EBBC28502}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E8EE68A4-D1A0-41D5-B03F-3051685AF27B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="75"/>
+													<Property Name="Min" Type="Real64" Value="-75"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
@@ -178,6 +345,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Overworld_Ambience" ID="{777D0BC9-9087-4821-B40F-DE20176B3818}" ShortID="1037898186">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
@@ -214,6 +388,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Overworld_Switch" ID="{3AAE3204-8BD2-4E20-B655-1CF742847F81}" ShortID="967569486">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
@@ -237,6 +418,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SpiritWorld_Switch" ID="{EB7B92DD-ED79-4D8B-97B9-5C475FA3F67B}" ShortID="977030266">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>

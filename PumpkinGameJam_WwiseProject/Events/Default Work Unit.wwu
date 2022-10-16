@@ -3,28 +3,143 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Overworld_Switch" ID="{96C54D89-FA06-4500-9538-5E6A25345F68}">
+				<Folder Name="Locomotion" ID="{2ED5008E-C968-44D8-9F30-BF4BE8D8A3CD}" ShortID="159399864">
 					<ChildrenList>
-						<Action Name="" ID="{A037DC5F-C9D7-459B-A469-766638787FE8}" ShortID="659801204">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Overworld_Switch" ID="{3AAE3204-8BD2-4E20-B655-1CF742847F81}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Stop_SpiritWorld_Float" ID="{84B2AD1D-E4DD-4FA5-885C-B7B8D1DAD847}">
+							<ChildrenList>
+								<Action Name="" ID="{09D9C145-A240-44EA-8131-650F55852166}" ShortID="293399014">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritWorld_Float" ID="{E6A7599C-A9FE-4256-8E3B-2DA766EC0609}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SpiritWorld_Jump" ID="{50F863E5-B3FF-44D2-BB86-E1231EA0C83D}">
+							<ChildrenList>
+								<Action Name="" ID="{D4150B9A-133F-45ED-B3E5-73E674BE2D98}" ShortID="174071241">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritWorld_Jump" ID="{4DB8BB23-530C-4651-877D-07ACD1540B0C}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SpiritWorld_Float" ID="{79ADA6F7-8E4F-4A30-9D35-6152FBBC315F}">
+							<ChildrenList>
+								<Action Name="" ID="{7F627D9F-23AA-4E57-8AED-3E50FDB18E0D}" ShortID="383394942">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritWorld_Float" ID="{E6A7599C-A9FE-4256-8E3B-2DA766EC0609}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1FCA34BE-F4E8-4CC1-8C48-2111A3CBB7B7}" ShortID="754107819">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritWorld_Float" ID="{E6A7599C-A9FE-4256-8E3B-2DA766EC0609}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Overworld_Jump" ID="{7B6F8F2A-50B5-4473-B4E7-50006A515C68}">
+							<ChildrenList>
+								<Action Name="" ID="{BE5B01DE-13CE-44C2-92B8-8429BDBB9A2F}" ShortID="725880960">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Jump" ID="{F8A27B6D-33D6-464C-B4E7-CC7252A74DC9}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Overworld_Footsteps" ID="{D5D7F172-8DAC-444B-BF1D-A42C51B6A3C4}">
+							<ChildrenList>
+								<Action Name="" ID="{A2FD3AC6-8CAE-46D8-A2E4-2087A2192255}" ShortID="145089885">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Overworld_Footsteps" ID="{E3F85856-377F-43D3-945D-EE2C5BB0FC0A}">
+							<ChildrenList>
+								<Action Name="" ID="{304AB087-EC20-47D9-B19D-952AEB3C8102}" ShortID="280115272">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Play_SpiritWorld_Switch" ID="{066BBD5C-2BEC-42D2-A922-9CA0314077A6}">
+				</Folder>
+				<Folder Name="Triggers" ID="{65386B3E-E740-4904-8E6C-09D838BF64A6}" ShortID="743087300">
 					<ChildrenList>
-						<Action Name="" ID="{6A306912-AA75-4CBE-8DDE-8FDCDD907151}" ShortID="497905795">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SpiritWorld_Switch" ID="{EB7B92DD-ED79-4D8B-97B9-5C475FA3F67B}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_Overworld_Switch" ID="{96C54D89-FA06-4500-9538-5E6A25345F68}">
+							<ChildrenList>
+								<Action Name="" ID="{A037DC5F-C9D7-459B-A469-766638787FE8}" ShortID="659801204">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Switch" ID="{3AAE3204-8BD2-4E20-B655-1CF742847F81}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SpiritWorld_Switch" ID="{066BBD5C-2BEC-42D2-A922-9CA0314077A6}">
+							<ChildrenList>
+								<Action Name="" ID="{6A306912-AA75-4CBE-8DDE-8FDCDD907151}" ShortID="497905795">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritWorld_Switch" ID="{EB7B92DD-ED79-4D8B-97B9-5C475FA3F67B}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Overworld_Ambience" ID="{689E736D-05C3-4B76-99CB-18499C51B818}">
+							<ChildrenList>
+								<Action Name="" ID="{6E83071A-684F-4267-9C2C-2F4DCB5047B7}" ShortID="503497783">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Ambience" ID="{777D0BC9-9087-4821-B40F-DE20176B3818}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Overworld_Ambience" ID="{EEAB337C-035C-49B2-A683-D7869F89F6A1}">
+							<ChildrenList>
+								<Action Name="" ID="{E9EA9AD1-4A80-4813-964B-CBD0429C6EE9}" ShortID="474339727">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Ambience" ID="{777D0BC9-9087-4821-B40F-DE20176B3818}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
