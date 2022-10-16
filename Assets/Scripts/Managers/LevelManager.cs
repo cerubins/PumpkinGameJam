@@ -32,6 +32,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event spiritWorldMusic_pause;
     [SerializeField] AK.Wwise.Event spiritWorldMusic_resume;
     [SerializeField] AK.Wwise.Event stopAll;
+    [SerializeField] AK.Wwise.Event death;
 
     //Level vars
     public bool isOverWorld=true;
@@ -145,7 +146,9 @@ public class LevelManager : MonoBehaviour
 
     public void Death() //Called by ResetOnTouch
     {
+
         stopAll.Post(gameObject);
+        death.Post(gameObject);
         Debug.Log("we died bitches");
         KillPlayerGameObjects();
         gameover = true;

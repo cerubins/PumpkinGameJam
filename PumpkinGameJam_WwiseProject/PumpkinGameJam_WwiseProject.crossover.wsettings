@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\PumpkinJam2022\First_Iterations\"/>
 				<Property Name="Event Action List\{066BBD5C-2BEC-42D2-A922-9CA0314077A6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{06E13BA6-7ED7-479B-B51D-53DB618679D1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0A71D343-ECF7-454D-89CC-AF9A88B631B0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0FDA1B28-7AC3-434F-90E4-84B4256DDE60}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{15E953FE-F43E-44EE-B69D-667599633925}\x64_Expand States" Type="string" Value=""/>

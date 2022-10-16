@@ -96,6 +96,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1d2d4ef85da694f8596afcd02cd25209, type: 2}
+  death:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9b0f39e4604b347bc84aecd9d99178b7, type: 2}
   isOverWorld: 1
 --- !u!114 &-379322433356582899
 MonoBehaviour:
