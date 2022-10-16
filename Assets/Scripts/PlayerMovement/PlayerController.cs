@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public bool isGhost = false;
+    public int jumpCounter = 0;
 
     [SerializeField] Rigidbody2D playerRB;
     [SerializeField] int baseSpeed;
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     Animator animator;
 
-    bool isGrounded = false;
+    public bool isGrounded = false;
 
     float distanceToGround = 0f;
 
@@ -53,12 +54,17 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("speed", 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGhost)
             {
-                playerRB.velocity += new Vector2(playerRB.velocity.x, -jumpForce);
                 //Addtl jumping logic here
+                if (jumpCounter < 5)
+                {
+                    playerRB.velocity += new Vector2(playerRB.velocity.x, -(jumpForce-(jumpCounter*0.1f)));
+                }
+                jumpCounter++;
+
             }
             else if (isGrounded)
             {
@@ -70,9 +76,9 @@ public class PlayerController : MonoBehaviour
 
     bool checkGround()
     {
-
-        if (Physics2D.Raycast(this.transform.position, Vector2.down, distanceToGround + 0.1f, layermask))
+        if ((!isGhost && Physics2D.Raycast(this.transform.position, Vector2.down, distanceToGround + 0.1f, layermask)) || (isGhost && Physics2D.Raycast(this.transform.position, Vector2.up, distanceToGround + 0.1f, layermask)))
         {
+            jumpCounter = 0; //Reset jumps
             isGrounded = true;
             return true;
         }
