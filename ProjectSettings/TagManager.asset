@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player_Ghost
   - Player_Overworld
+  - KillBoundary
   layers:
   - Default
   - TransparentFX

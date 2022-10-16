@@ -11,7 +11,6 @@ public class ResetOnTouch : MonoBehaviour
     {
         if(damagingTags.Contains(collision.collider.tag))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             LevelManager.instance.Death();
         }
         
@@ -21,7 +20,6 @@ public class ResetOnTouch : MonoBehaviour
     {
         if (damagingTags.Contains(collision.tag))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             LevelManager.instance.Death();
         }
     }

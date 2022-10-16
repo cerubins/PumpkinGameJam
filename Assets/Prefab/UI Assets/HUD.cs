@@ -5,12 +5,13 @@ using UnityEngine;
 public class HUD : MonoBehaviour
 {
     public static HUD instance;
-    public enum MenuType {GAME_OVER, MAIN_MENU};
+    public enum MenuType {GAME_OVER, MAIN_MENU, NONE};
+    public MenuType startingMenuType = MenuType.NONE;
+
     void Awake()
     {
         instance = this;
-        DontDestroyOnLoad(gameObject);
-        changeToMenu(MenuType.MAIN_MENU);
+        changeToMenu(startingMenuType);
     }
 
     // Update is called once per frame
@@ -43,5 +44,10 @@ public class HUD : MonoBehaviour
 
     }
 
+    public void ResetScene()
+    {
+        LevelManager.instance.ResetScene();
+        changeToMenu(MenuType.NONE);
+    }
 
 }

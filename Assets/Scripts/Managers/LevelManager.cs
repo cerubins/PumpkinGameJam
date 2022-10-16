@@ -25,27 +25,29 @@ public class LevelManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event spiritworld_switch;
 
     //Level vars
-    public bool isOverWorld;
+    public bool isOverWorld=true;
 
     void Awake()
     {
         instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
     {
         ghost_controller = GameObject.FindGameObjectWithTag("Player_Ghost").GetComponent<PlayerController>();
         overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<PlayerController>();
+        overworld_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = isOverWorld;
+        ghost_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = !isOverWorld;
+
     }
 
 
     //clocked curseclock, if no need to display things
-/*     IEnumerator CurseClock(float period){
-        yield return new WaitForSeconds(period);
-        switchWorld();
-        CurseClock(period);
-    } */
+    /*     IEnumerator CurseClock(float period){
+            yield return new WaitForSeconds(period);
+            switchWorld();
+            CurseClock(period);
+        } */
 
     void switchWorld(){
         isOverWorld = !isOverWorld;
@@ -113,6 +115,7 @@ public class LevelManager : MonoBehaviour
     public void Death() //Called by ResetOnTouch
     {
         Debug.Log("we died bitches");
+        HUD.instance.changeToMenu(HUD.MenuType.GAME_OVER);
     }
 
     public void ResetScene()
