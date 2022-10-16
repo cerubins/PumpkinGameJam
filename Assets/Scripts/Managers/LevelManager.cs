@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     public float cursePeriod;
 
-    public float timer=5;
+    public float timer;
     public bool timerRunning;
 
     [SerializeField] PlayerController ghost_controller;
@@ -25,6 +25,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event spiritworld_switch;
     [SerializeField] AK.Wwise.Event overworldAmbience_play;
     [SerializeField] AK.Wwise.Event overworldAmbience_stop;
+    [SerializeField] AK.Wwise.Event music_play;
+    [SerializeField] AK.Wwise.Event music_pause;
+    [SerializeField] AK.Wwise.Event music_resume;
 
     //Level vars
     public bool isOverWorld=true;
@@ -42,7 +45,8 @@ public class LevelManager : MonoBehaviour
         overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<PlayerController>();
         overworld_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = isOverWorld;
         ghost_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = !isOverWorld;
-        StartTimer(cursePeriod); //Delet later
+
+        music_play.Post(gameObject);
     }
 
 
@@ -58,8 +62,8 @@ public class LevelManager : MonoBehaviour
         if (isOverWorld)
         {
             overworld_switch.Post(gameObject);
-
             overworldAmbience_play.Post(gameObject);
+            music_resume.Post(gameObject);
 
             overworld_controller.enabled = true;
             ghost_controller.enabled = false;
@@ -67,8 +71,8 @@ public class LevelManager : MonoBehaviour
         else
         {
             spiritworld_switch.Post(gameObject);
-
             overworldAmbience_stop.Post(gameObject);
+            music_pause.Post(gameObject);
 
             overworld_controller.enabled = false;
             ghost_controller.enabled = true;
@@ -94,13 +98,12 @@ public class LevelManager : MonoBehaviour
 
             if(timer == 0){
                 switchWorld();
-                StartTimer(cursePeriod);
+                timerRunning = false; 
             }
             else{
                 if(timer - Time.deltaTime <= 0){
                     timer = 0;
-                    switchWorld();
-                    StartTimer(cursePeriod);
+                    timerRunning = false;
                 }
                 else{
                     timer -= Time.deltaTime;
@@ -110,7 +113,7 @@ public class LevelManager : MonoBehaviour
 
     }
     //call this from other functions
-    void StartTimer(float period){
+    void ResetTimer(float period){
         timerRunning = true;
         timer = period;
     }
@@ -138,21 +141,18 @@ public class LevelManager : MonoBehaviour
     {
         currentLevelIndex = 0;
         SceneManager.LoadScene(levelSequence[currentLevelIndex]);
-        StartTimer(10f);
     }
 
     public void NextScene()
     {
         if (currentLevelIndex < levelSequence.Length - 1) {
             SceneManager.LoadScene(levelSequence[currentLevelIndex + 1]);
-            StartTimer(10f);
         }
         else //FINISHES SEQUENCE
         {
             Debug.LogWarning("can't go to the next scene if there's no more!");
             HUD.instance.changeToMenu(HUD.MenuType.END);
         }
-        timerRunning = true;
     }
 
     

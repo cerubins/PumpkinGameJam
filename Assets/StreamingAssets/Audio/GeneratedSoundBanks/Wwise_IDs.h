@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSE_MUSIC = 2735935537U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_OVERWORLD_AMBIENCE = 1345567807U;
         static const AkUniqueID PLAY_OVERWORLD_FOOTSTEPS = 4115298192U;
         static const AkUniqueID PLAY_OVERWORLD_JUMP = 4002722943U;
@@ -20,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_SPIRITWORLD_FLOAT = 2931362732U;
         static const AkUniqueID PLAY_SPIRITWORLD_JUMP = 773934322U;
         static const AkUniqueID PLAY_SPIRITWORLD_SWITCH = 2613282610U;
+        static const AkUniqueID RESUME_MUSIC = 2940177080U;
         static const AkUniqueID STOP_OVERWORLD_AMBIENCE = 431072021U;
         static const AkUniqueID STOP_OVERWORLD_FOOTSTEPS = 1475340186U;
         static const AkUniqueID STOP_SPIRITWORLD_FLOAT = 32999774U;

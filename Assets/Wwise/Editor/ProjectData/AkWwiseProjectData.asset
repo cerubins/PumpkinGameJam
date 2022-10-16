@@ -188,7 +188,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0921b45dea40034692fdfbb5703c65b5
     GuidInternal: 
-    m_lastTime: -8585356737182036122
+    m_lastTime: -8585356680435505692
     List:
     - name: Locomotion
       guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
@@ -207,6 +207,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Pause_Music
+      guid: 2bceb944310d77429c78817375f03374
+      id: 2735935537
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      - ElementName: Pause_Music
+        ObjectType: 3
+        guid: 2bceb944310d77429c78817375f03374
+      Path: Events/Default Work Unit/Triggers/Pause_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Music
+      guid: 43d3710af7ec4d4589ccaf9a88b631b0
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      - ElementName: Play_Music
+        ObjectType: 3
+        guid: 43d3710af7ec4d4589ccaf9a88b631b0
+      Path: Events/Default Work Unit/Triggers/Play_Music
+      maxAttenuation: 0
+      maxDuration: 144
+      minDuration: 144
     - name: Play_Overworld_Ambience
       guid: 6d739e68c305764b99cb18499c51b818
       id: 1345567807
@@ -245,8 +285,8 @@ MonoBehaviour:
         guid: 72f1d7d5ac8d4b44bf1da42c51b6a3c4
       Path: Events/Default Work Unit/Locomotion/Play_Overworld_Footsteps
       maxAttenuation: 0
-      maxDuration: 0.6875
-      minDuration: 0.5
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Overworld_Jump
       guid: 2a8f6f7bb5507344b4e750006a515c68
       id: 4002722943
@@ -347,6 +387,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.875
       minDuration: 1.875
+    - name: Resume_Music
+      guid: 1e210c62c164d646af8d4c2bcb752f0c
+      id: 2940177080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      - ElementName: Resume_Music
+        ObjectType: 3
+        guid: 1e210c62c164d646af8d4c2bcb752f0c
+      Path: Events/Default Work Unit/Triggers/Resume_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Overworld_Ambience
       guid: 7c33abee5c03b249a683d7869f89f6a1
       id: 431072021
