@@ -124,7 +124,8 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("we won bitches");
         //TEMPORARY, SOME SORT OF UI/TRANSITION?
-        NextScene();
+        //lol we won the game 
+        HUD.instance.changeToMenu(HUD.MenuType.END);
     }
 
     public void Death() //Called by ResetOnTouch
