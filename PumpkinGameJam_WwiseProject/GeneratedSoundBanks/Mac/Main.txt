@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	32999774	Stop_SpiritWorld_Float			\Default Work Unit\Locomotion\Stop_SpiritWorld_Float	
 	431072021	Stop_Overworld_Ambience			\Default Work Unit\Triggers\Stop_Overworld_Ambience	
+	452547817	Stop_All			\Default Work Unit\Triggers\Stop_All	
 	773934322	Play_SpiritWorld_Jump			\Default Work Unit\Locomotion\Play_SpiritWorld_Jump	
 	1345567807	Play_Overworld_Ambience			\Default Work Unit\Triggers\Play_Overworld_Ambience	
 	1355223307	Play_Overworld_Switch			\Default Work Unit\Triggers\Play_Overworld_Switch	

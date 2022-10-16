@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 0b93ac82e280ab4fa60875de3e42f724
     GuidInternal: 
-    m_lastTime: -8585356748017524284
+    m_lastTime: -8585357172229611605
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: 6178348d36a9e14e93cd4e7467cb3d29
     GuidInternal: 
-    m_lastTime: -8585356729135353747
+    m_lastTime: -8585356612639536839
     List:
     - name: Environment
       guid: f00e4d67e62e6442a816301c740e8ca2
@@ -188,7 +188,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0921b45dea40034692fdfbb5703c65b5
     GuidInternal: 
-    m_lastTime: -8585356680435505692
+    m_lastTime: -8585356599084994289
     List:
     - name: Locomotion
       guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
@@ -245,8 +245,8 @@ MonoBehaviour:
         guid: 43d3710af7ec4d4589ccaf9a88b631b0
       Path: Events/Default Work Unit/Triggers/Play_Music
       maxAttenuation: 0
-      maxDuration: 144
-      minDuration: 144
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Overworld_Ambience
       guid: 6d739e68c305764b99cb18499c51b818
       id: 1345567807
@@ -407,6 +407,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_All
+      guid: 44ab333fb4a98149b8c2e1d9713f3760
+      id: 452547817
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Triggers
+        ObjectType: 4
+        guid: 3e6b386540e704498e6c09d838bf64a6
+      - ElementName: Stop_All
+        ObjectType: 3
+        guid: 44ab333fb4a98149b8c2e1d9713f3760
+      Path: Events/Default Work Unit/Triggers/Stop_All
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Overworld_Ambience
       guid: 7c33abee5c03b249a683d7869f89f6a1
       id: 431072021
@@ -496,7 +516,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: a2d032ea457eaf4fa35871ac635879cd
     GuidInternal: 
-    m_lastTime: -8585356748018637614
+    m_lastTime: -8585356612639540871
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
@@ -510,7 +530,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ddb34398e1f97a4f8781747cf04dc77c
     GuidInternal: 
-    m_lastTime: -8585356748017526271
+    m_lastTime: -8585357172229615917
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
@@ -524,7 +544,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: e90b49efa9cb514e88b4407bc6ee801d
     GuidInternal: 
-    m_lastTime: -8585356748017525593
+    m_lastTime: -8585357172229614573
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -538,10 +558,10 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 1068658b6b731740a037247c20c439eb
     GuidInternal: 
-    m_lastTime: -8585356748017524979
+    m_lastTime: -8585357172229612897
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000800000009000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000d00000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

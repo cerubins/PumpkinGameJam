@@ -34,6 +34,16 @@
 						</Event>
 						<Event Name="Play_SpiritWorld_Float" ID="{79ADA6F7-8E4F-4A30-9D35-6152FBBC315F}">
 							<ChildrenList>
+								<Action Name="" ID="{72214BC5-3348-4483-9544-2F0D7F9E115E}" ShortID="157409606">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{7F627D9F-23AA-4E57-8AED-3E50FDB18E0D}" ShortID="383394942">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
@@ -66,6 +76,26 @@
 						</Event>
 						<Event Name="Play_Overworld_Footsteps" ID="{D5D7F172-8DAC-444B-BF1D-A42C51B6A3C4}">
 							<ChildrenList>
+								<Action Name="" ID="{7669D268-74BD-48B2-A9A9-50294FC98D01}" ShortID="197833590">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EEEE912E-3436-44F9-8DEC-1E4762F3BD4E}" ShortID="188813115">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritWorld_Float" ID="{E6A7599C-A9FE-4256-8E3B-2DA766EC0609}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{A2FD3AC6-8CAE-46D8-A2E4-2087A2192255}" ShortID="145089885">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -180,6 +210,16 @@
 											<ObjectRef Name="Test" ID="{CCF5C7BC-3E16-4DC3-8940-16929345E996}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
 										</Reference>
 									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_All" ID="{3F33AB44-A9B4-4981-B8C2-E1D9713F3760}">
+							<ChildrenList>
+								<Action Name="" ID="{138D7EBB-D5F4-4B5D-9F5A-62D695EF5B7B}" ShortID="675046244">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList/>
 								</Action>
 							</ChildrenList>
 						</Event>
