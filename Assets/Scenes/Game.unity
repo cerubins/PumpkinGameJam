@@ -335,6 +335,26 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  overworldAmbience_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  overworldAmbience_stop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  music_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  music_pause:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  music_resume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   isOverWorld: 0
 --- !u!4 &296309280
 Transform:
@@ -1105,10 +1125,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4254335151164569778, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 96e46a6275be34248b6ad867a80b49a9, type: 3}
     - target: {fileID: 4254335151164569790, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 7532592857946708056, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9e7781e93e5844beba1e752498789add, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
 --- !u!1001 &4369778758352727206
