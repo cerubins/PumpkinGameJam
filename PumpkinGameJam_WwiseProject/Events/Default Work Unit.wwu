@@ -225,6 +225,88 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{58815668-2ED4-4637-8226-7B8ACFE08DBC}" ShortID="760366520">
+					<ChildrenList>
+						<Event Name="Play_Spiritworld_Music" ID="{0FDA1B28-7AC3-434F-90E4-84B4256DDE60}">
+							<ChildrenList>
+								<Action Name="" ID="{E846D59C-8AAA-4DC6-8990-8FE2CA6BFEB0}" ShortID="137281344">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spiritworld_Music" ID="{312FB2D6-65A6-41AB-93B8-7E1A1AB32726}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Resume_Overworld_Music" ID="{E0AF54C0-4117-4C3B-95C2-7C692711EC01}">
+							<ChildrenList>
+								<Action Name="" ID="{6EC78072-C7B3-4A58-8B40-9C8F107E8843}" ShortID="610424354">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Music" ID="{8D4538F0-168E-4F5C-BC8A-22AEC4D67000}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Overworld_Music" ID="{B629B39D-06FF-45E3-A92B-F40580BA85DF}">
+							<ChildrenList>
+								<Action Name="" ID="{3B627374-E7EE-4E03-A1E1-E07ECAECDAF7}" ShortID="1057029388">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Music" ID="{8D4538F0-168E-4F5C-BC8A-22AEC4D67000}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_Overworld_Music" ID="{72315907-87D5-4420-BFFC-82E9058DE8D9}">
+							<ChildrenList>
+								<Action Name="" ID="{FE84CABE-0E36-4092-A35D-57B9B4D10C1D}" ShortID="444561591">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Music" ID="{8D4538F0-168E-4F5C-BC8A-22AEC4D67000}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Resume_Spiritworld_Music" ID="{2CF56B28-874F-4FBB-BF58-48EDC3344002}">
+							<ChildrenList>
+								<Action Name="" ID="{29A30559-C075-49FF-A086-57832110388D}" ShortID="834510603">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spiritworld_Music" ID="{312FB2D6-65A6-41AB-93B8-7E1A1AB32726}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_Spiritworld_Music" ID="{AC4E182F-4971-4DC5-967D-C6373FAB0717}">
+							<ChildrenList>
+								<Action Name="" ID="{0C900830-FDC8-4AC4-BEF0-F207EA774C1B}" ShortID="119487152">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spiritworld_Music" ID="{312FB2D6-65A6-41AB-93B8-7E1A1AB32726}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

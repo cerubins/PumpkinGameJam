@@ -68,18 +68,30 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4698fe36caf5f45be8493a447b9e849d, type: 2}
-  music_play:
+  overworldMusic_play:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 788ff80038bac46c2be8e0e5434b4364, type: 2}
-  music_pause:
+    WwiseObjectReference: {fileID: 11400000, guid: c316532e672714ed2bd41e89f45af6dd, type: 2}
+  overworldMusic_pause:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 599b48f38d8f145f1849d0968893a33d, type: 2}
-  music_resume:
+    WwiseObjectReference: {fileID: 11400000, guid: 3c713588bf9394f398695021b2ea5036, type: 2}
+  overworldMusic_resume:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5541fba48211540f2ad88d4a86311bf2, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: f745d4d31e7f54458acf1a4be1094235, type: 2}
+  spiritWorldMusic_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: db91f3855ae0347a9ad0936d57e76166, type: 2}
+  spiritWorldMusic_pause:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8c76d8efa8d9b47d39dbed590b1bec0b, type: 2}
+  spiritWorldMusic_resume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9b028055c4c234790b8314f42199f280, type: 2}
   stopAll:
     idInternal: 0
     valueGuidInternal: 

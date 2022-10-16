@@ -16,20 +16,15 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4111988196">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2666130730">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2735935537" Name="Pause_Music" ObjectPath="\Events\Default Work Unit\Triggers\Pause_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Triggers\Play_Music" DurationType="OneShot" DurationMin="0." DurationMax="0.">
-					<IncludedMemoryFiles>
-						<File Id="868946288" Language="SFX">
-							<ShortName>Gibby_Ambient_02.wav</ShortName>
-							<Path>SFX/Gibby_Ambient_02_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="1913357618" Name="Pause_Overworld_Music" ObjectPath="\Events\Default Work Unit\Music\Pause_Overworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="613586233" Name="Pause_Spiritworld_Music" ObjectPath="\Events\Default Work Unit\Music\Pause_Spiritworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Triggers\Play_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1345567807" Name="Play_Overworld_Ambience" ObjectPath="\Events\Default Work Unit\Triggers\Play_Overworld_Ambience" DurationType="OneShot" DurationMin="38." DurationMax="38.">
 					<IncludedMemoryFiles>
 						<File Id="337487361" Language="SFX">
@@ -62,6 +57,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="542889596" Name="Play_Overworld_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Overworld_Music" DurationType="OneShot" DurationMin="64.064247" DurationMax="64.064247">
+					<IncludedMemoryFiles>
+						<File Id="715608847" Language="SFX">
+							<ShortName>Overworld_Music.wav</ShortName>
+							<Path>SFX/Overworld_Music_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1355223307" Name="Play_Overworld_Switch" ObjectPath="\Events\Default Work Unit\Triggers\Play_Overworld_Switch" DurationType="OneShot" DurationMin="1.875" DurationMax="1.875">
 					<IncludedMemoryFiles>
 						<File Id="679538964" Language="SFX">
@@ -86,6 +89,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="498723543" Name="Play_Spiritworld_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Spiritworld_Music" DurationType="OneShot" DurationMin="60.06752" DurationMax="60.06752">
+					<IncludedMemoryFiles>
+						<File Id="1064847859" Language="SFX">
+							<ShortName>SpiritWorld_Music.wav</ShortName>
+							<Path>SFX/SpiritWorld_Music_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2613282610" Name="Play_SpiritWorld_Switch" ObjectPath="\Events\Default Work Unit\Triggers\Play_SpiritWorld_Switch" DurationType="OneShot" DurationMin="1.875" DurationMax="1.875">
 					<IncludedMemoryFiles>
 						<File Id="973690474" Language="SFX">
@@ -95,6 +106,8 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2940177080" Name="Resume_Music" ObjectPath="\Events\Default Work Unit\Triggers\Resume_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2096461675" Name="Resume_Overworld_Music" ObjectPath="\Events\Default Work Unit\Music\Resume_Overworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="186887628" Name="Resume_Spiritworld_Music" ObjectPath="\Events\Default Work Unit\Music\Resume_Spiritworld_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Triggers\Stop_All" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="431072021" Name="Stop_Overworld_Ambience" ObjectPath="\Events\Default Work Unit\Triggers\Stop_Overworld_Ambience" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1475340186" Name="Stop_Overworld_Footsteps" ObjectPath="\Events\Default Work Unit\Locomotion\Stop_Overworld_Footsteps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>

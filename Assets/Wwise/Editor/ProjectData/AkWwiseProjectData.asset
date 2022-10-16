@@ -188,7 +188,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 0921b45dea40034692fdfbb5703c65b5
     GuidInternal: 
-    m_lastTime: -8585356599084994289
+    m_lastTime: -8585356572396301171
     List:
     - name: Locomotion
       guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
@@ -204,6 +204,23 @@ MonoBehaviour:
         ObjectType: 4
         guid: 8e00d52e68c9d8449f30bf4be8d8a3cd
       Path: Events/Default Work Unit/Locomotion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 68568158d42e374682267b8acfe08dbc
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Music
+        ObjectType: 4
+        guid: 68568158d42e374682267b8acfe08dbc
+      Path: Events/Default Work Unit/Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -224,6 +241,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2bceb944310d77429c78817375f03374
       Path: Events/Default Work Unit/Triggers/Pause_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Pause_Overworld_Music
+      guid: 07593172d5872044bffc82e9058de8d9
+      id: 1913357618
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Music
+        ObjectType: 4
+        guid: 68568158d42e374682267b8acfe08dbc
+      - ElementName: Pause_Overworld_Music
+        ObjectType: 3
+        guid: 07593172d5872044bffc82e9058de8d9
+      Path: Events/Default Work Unit/Music/Pause_Overworld_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Pause_Spiritworld_Music
+      guid: 2f184eac7149c54d967dc6373fab0717
+      id: 613586233
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Music
+        ObjectType: 4
+        guid: 68568158d42e374682267b8acfe08dbc
+      - ElementName: Pause_Spiritworld_Music
+        ObjectType: 3
+        guid: 2f184eac7149c54d967dc6373fab0717
+      Path: Events/Default Work Unit/Music/Pause_Spiritworld_Music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -307,6 +364,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5
       minDuration: 0.5
+    - name: Play_Overworld_Music
+      guid: 9db329b6ff06e345a92bf40580ba85df
+      id: 542889596
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Music
+        ObjectType: 4
+        guid: 68568158d42e374682267b8acfe08dbc
+      - ElementName: Play_Overworld_Music
+        ObjectType: 3
+        guid: 9db329b6ff06e345a92bf40580ba85df
+      Path: Events/Default Work Unit/Music/Play_Overworld_Music
+      maxAttenuation: 0
+      maxDuration: 64.06425
+      minDuration: 64.06425
     - name: Play_Overworld_Switch
       guid: 894dc59606fa004595385e6a25345f68
       id: 1355223307
@@ -367,6 +444,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.348485
       minDuration: 0.319562
+    - name: Play_Spiritworld_Music
+      guid: 281bda0fc37a4f4390e484b4256dde60
+      id: 498723543
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Music
+        ObjectType: 4
+        guid: 68568158d42e374682267b8acfe08dbc
+      - ElementName: Play_Spiritworld_Music
+        ObjectType: 3
+        guid: 281bda0fc37a4f4390e484b4256dde60
+      Path: Events/Default Work Unit/Music/Play_Spiritworld_Music
+      maxAttenuation: 0
+      maxDuration: 60.06752
+      minDuration: 60.06752
     - name: Play_SpiritWorld_Switch
       guid: 5cbd6b06ec2bd242a9229ca0314077a6
       id: 2613282610
@@ -404,6 +501,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1e210c62c164d646af8d4c2bcb752f0c
       Path: Events/Default Work Unit/Triggers/Resume_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Resume_Overworld_Music
+      guid: c054afe017413b4c95c27c692711ec01
+      id: 2096461675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Music
+        ObjectType: 4
+        guid: 68568158d42e374682267b8acfe08dbc
+      - ElementName: Resume_Overworld_Music
+        ObjectType: 3
+        guid: c054afe017413b4c95c27c692711ec01
+      Path: Events/Default Work Unit/Music/Resume_Overworld_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Resume_Spiritworld_Music
+      guid: 286bf52c4f87bb4fbf5848edc3344002
+      id: 186887628
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0921b45dea40034692fdfbb5703c65b5
+      - ElementName: Music
+        ObjectType: 4
+        guid: 68568158d42e374682267b8acfe08dbc
+      - ElementName: Resume_Spiritworld_Music
+        ObjectType: 3
+        guid: 286bf52c4f87bb4fbf5848edc3344002
+      Path: Events/Default Work Unit/Music/Resume_Spiritworld_Music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -561,7 +698,7 @@ MonoBehaviour:
     m_lastTime: -8585357172229612897
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000d00000012000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000d00000012000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

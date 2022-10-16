@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8d7953fe7f844a1b5c1a23f2796985, type: 3}
+  m_Name: E0AF54C0-4117-4C3B-95C2-7C692711EC01
+  m_EditorClassIdentifier: 
+  objectName: Resume_Overworld_Music
+  id: 2096461675
+  guid: E0AF54C0-4117-4C3B-95C2-7C692711EC01
