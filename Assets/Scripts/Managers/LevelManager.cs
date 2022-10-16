@@ -165,20 +165,9 @@ public class LevelManager : MonoBehaviour
     {
         gameover = false;
         currentLevelIndex = 0;
-        SceneManager.LoadScene(levelSequence[currentLevelIndex]);
+        SceneManager.LoadScene("Game");
     }
 
-    public void NextScene()
-    {
-        if (currentLevelIndex < levelSequence.Length - 1) {
-            SceneManager.LoadScene(levelSequence[currentLevelIndex + 1]);
-        }
-        else //FINISHES SEQUENCE
-        {
-            Debug.LogWarning("can't go to the next scene if there's no more!");
-            HUD.instance.changeToMenu(HUD.MenuType.END);
-        }
-    }
 
     public void KillPlayerGameObjects()
     {

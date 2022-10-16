@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class HUD : MonoBehaviour
 {
     public static HUD instance;
@@ -62,8 +62,8 @@ public class HUD : MonoBehaviour
 
     public void ResetGame()
     {
-        LevelManager.instance.StartGame();
-        changeToMenu(MenuType.NONE);
+        SceneManager.LoadScene("Main Menu");
+
     }
 
 }
