@@ -99,5 +99,10 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("we won bitches");
     }
-    
+
+    public void Death() //Called by ResetOnTouch
+    {
+        Debug.Log("we died bitches");
+    }
+
 }

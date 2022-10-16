@@ -12,7 +12,9 @@ public class ResetOnTouch : MonoBehaviour
         if(damagingTags.Contains(collision.collider.tag))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            LevelManager.instance.Death();
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,6 +22,7 @@ public class ResetOnTouch : MonoBehaviour
         if (damagingTags.Contains(collision.tag))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            LevelManager.instance.Death();
         }
     }
 }
