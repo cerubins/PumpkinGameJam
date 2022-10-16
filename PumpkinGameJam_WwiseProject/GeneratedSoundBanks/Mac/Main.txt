@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1355223307	Play_Overworld_Switch			\Default Work Unit\Play_Overworld_Switch	
+	2613282610	Play_SpiritWorld_Switch			\Default Work Unit\Play_SpiritWorld_Switch	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	679538964	Overworld_Switch	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Mac\SFX\OverworldSwitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_State\Overworld_Switch		360064
+	973690474	SpiritWorld_Switch	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Mac\SFX\SpiritWorldSwitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_State\SpiritWorld_Switch		360064
+
