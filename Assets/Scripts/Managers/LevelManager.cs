@@ -31,6 +31,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event spiritWorldMusic_play;
     [SerializeField] AK.Wwise.Event spiritWorldMusic_pause;
     [SerializeField] AK.Wwise.Event spiritWorldMusic_resume;
+    [SerializeField] AK.Wwise.Event MenuMusic_start;
+    [SerializeField] AK.Wwise.Event MenuMusic_stop;
     [SerializeField] AK.Wwise.Event stopAll;
     [SerializeField] AK.Wwise.Event death;
 
