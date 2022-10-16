@@ -25,9 +25,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] AK.Wwise.Event spiritworld_switch;
     [SerializeField] AK.Wwise.Event overworldAmbience_play;
     [SerializeField] AK.Wwise.Event overworldAmbience_stop;
-    [SerializeField] AK.Wwise.Event music_play;
-    [SerializeField] AK.Wwise.Event music_pause;
-    [SerializeField] AK.Wwise.Event music_resume;
+    [SerializeField] AK.Wwise.Event overworldMusic_play;
+    [SerializeField] AK.Wwise.Event overworldMusic_pause;
+    [SerializeField] AK.Wwise.Event overworldMusic_resume;
+    [SerializeField] AK.Wwise.Event spiritWorldMusic_play;
+    [SerializeField] AK.Wwise.Event spiritWorldMusic_pause;
+    [SerializeField] AK.Wwise.Event spiritWorldMusic_resume;
     [SerializeField] AK.Wwise.Event stopAll;
 
     //Level vars
@@ -47,7 +50,8 @@ public class LevelManager : MonoBehaviour
         overworld_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = isOverWorld;
         ghost_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = !isOverWorld;
         StartTimer(cursePeriod);
-        music_play.Post(gameObject);
+        overworldMusic_play.Post(gameObject);
+        spiritWorldMusic_play.Post(gameObject);
     }
 
 
@@ -64,7 +68,9 @@ public class LevelManager : MonoBehaviour
         {
             overworld_switch.Post(gameObject);
             overworldAmbience_play.Post(gameObject);
-            music_resume.Post(gameObject);
+
+            spiritWorldMusic_pause.Post(gameObject);
+            overworldMusic_resume.Post(gameObject);
 
             overworld_controller.enabled = true;
             ghost_controller.enabled = false;
@@ -73,7 +79,9 @@ public class LevelManager : MonoBehaviour
         {
             spiritworld_switch.Post(gameObject);
             overworldAmbience_stop.Post(gameObject);
-            music_pause.Post(gameObject);
+
+            spiritWorldMusic_resume.Post(gameObject);
+            overworldMusic_pause.Post(gameObject);
 
             overworld_controller.enabled = false;
             ghost_controller.enabled = true;

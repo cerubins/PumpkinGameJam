@@ -4,20 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{06D3140C-3812-465E-97DE-40485E5C9817}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="Music Test" ID="{CDD448EE-5707-4597-AA20-4FEE2FB0FD5F}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="Play_Music" ID="{0A71D343-ECF7-454D-89CC-AF9A88B631B0}" WorkUnitID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Pause_Music" ID="{44B9CE2B-0D31-4277-9C78-817375F03374}" WorkUnitID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Resume_Music" ID="{620C211E-64C1-46D6-AF8D-4C2BCB752F0C}" WorkUnitID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}"/>
-							<Position X="2" Y="0"/>
-						</Module>
-					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>

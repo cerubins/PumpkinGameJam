@@ -481,11 +481,11 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Test" ID="{CCF5C7BC-3E16-4DC3-8940-16929345E996}" ShortID="1029175048">
+						<Sound Name="Spiritworld_Music" ID="{312FB2D6-65A6-41AB-93B8-7E1A1AB32726}" ShortID="918875405">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -498,17 +498,47 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Gibby_Ambient_02" ID="{4E90BDF7-25AE-4EB8-8120-22BD3DDA64D0}">
+								<AudioFileSource Name="SpiritWorld_Music" ID="{CD5D6B09-1A81-440D-B514-EE1F0F47FB87}">
 									<Language>SFX</Language>
-									<AudioFile>Gibby_Ambient_02.wav</AudioFile>
+									<AudioFile>SpiritWorld_Music.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="868946288"/>
+										<MediaID ID="1064847859"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="Gibby_Ambient_02" ID="{4E90BDF7-25AE-4EB8-8120-22BD3DDA64D0}" Platform="Linked"/>
+								<ActiveSource Name="SpiritWorld_Music" ID="{CD5D6B09-1A81-440D-B514-EE1F0F47FB87}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Overworld_Music" ID="{8D4538F0-168E-4F5C-BC8A-22AEC4D67000}" ShortID="685473684">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Overworld_Music" ID="{968598BC-47EE-4220-AC93-D92CCFCE6B92}">
+									<Language>SFX</Language>
+									<AudioFile>Overworld_Music.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="715608847"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Overworld_Music" ID="{968598BC-47EE-4220-AC93-D92CCFCE6B92}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

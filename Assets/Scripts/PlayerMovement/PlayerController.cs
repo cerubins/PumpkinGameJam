@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AK.Wwise.Event spiritworld_float;
     [SerializeField] AK.Wwise.Event spiritworld_idle;
 
+    private bool isWalking = false;
+
     Animator animator;
 
     public bool isGrounded = false;
@@ -58,9 +60,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("speed", 0);
             playerRB.velocity = new Vector2(0, playerRB.velocity.y);
-
-            spiritworld_idle.Post(gameObject);
-            overworld_idle.Post(gameObject);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -89,6 +88,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A))
         {
+            isWalking = true;
             if (isGhost)
             {
                 spiritworld_float.Post(gameObject);
@@ -101,8 +101,13 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else if (isWalking && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A)) 
+        {
+            spiritworld_idle.Post(gameObject);
+            overworld_idle.Post(gameObject);
 
-
+            isWalking = false;
+        }
     }
 
     bool checkGround()
