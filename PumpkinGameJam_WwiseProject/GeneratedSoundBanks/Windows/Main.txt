@@ -6,7 +6,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1355223307	Play_Overworld_Switch			\Default Work Unit\Triggers\Play_Overworld_Switch	
 	1475340186	Stop_Overworld_Footsteps			\Default Work Unit\Locomotion\Stop_Overworld_Footsteps	
 	2613282610	Play_SpiritWorld_Switch			\Default Work Unit\Triggers\Play_SpiritWorld_Switch	
+	2735935537	Pause_Music			\Default Work Unit\Triggers\Pause_Music	
 	2931362732	Play_SpiritWorld_Float			\Default Work Unit\Locomotion\Play_SpiritWorld_Float	
+	2932040671	Play_Music			\Default Work Unit\Triggers\Play_Music	
+	2940177080	Resume_Music			\Default Work Unit\Triggers\Resume_Music	
 	4002722943	Play_Overworld_Jump			\Default Work Unit\Locomotion\Play_Overworld_Jump	
 	4115298192	Play_Overworld_Footsteps			\Default Work Unit\Locomotion\Play_Overworld_Footsteps	
 
@@ -22,6 +25,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	328921704	Overworld_Footsteps_01	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Windows\SFX\OverworldFootstep_01_50A1768F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Overworld_Footsteps\Overworld_Footsteps_01		38464
 	337487361	Overworld_Ambience	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Windows\SFX\OverworldAmbience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Overworld_Ambience		7296064
 	679538964	Overworld_Switch	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Windows\SFX\OverworldSwitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_State\Overworld_Switch		360064
+	868946288	Test	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Windows\SFX\Gibby_Ambient_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Test		27648064
 	886688993	Overworld_Jump	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Windows\SFX\OverworldJump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Overworld_Jump		96064
 	973690474	SpiritWorld_Switch	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Windows\SFX\SpiritWorldSwitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game_State\SpiritWorld_Switch		360064
 	1003554155	SpiritWorld_Float	Z:\Applications\Unity\Projects\PumpkinGameJam\PumpkinGameJam_WwiseProject\.cache\Windows\SFX\SpiritWorldFloat_EAB2CC33.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SpiritWorld_Float		198128
