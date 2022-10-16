@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     public float cursePeriod;
 
-    public float timer;
+    public float timer=5;
     public bool timerRunning;
 
     [SerializeField] PlayerController ghost_controller;
@@ -42,7 +42,7 @@ public class LevelManager : MonoBehaviour
         overworld_controller = GameObject.FindGameObjectWithTag("Player_Overworld").GetComponent<PlayerController>();
         overworld_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = isOverWorld;
         ghost_controller.gameObject.GetComponentInChildren<Cinemachine.CinemachineVirtualCamera>().enabled = !isOverWorld;
-
+        StartTimer(cursePeriod); //Delet later
     }
 
 
@@ -94,12 +94,13 @@ public class LevelManager : MonoBehaviour
 
             if(timer == 0){
                 switchWorld();
-                timerRunning = false; 
+                StartTimer(cursePeriod);
             }
             else{
                 if(timer - Time.deltaTime <= 0){
                     timer = 0;
-                    timerRunning = false;
+                    switchWorld();
+                    StartTimer(cursePeriod);
                 }
                 else{
                     timer -= Time.deltaTime;
@@ -109,7 +110,7 @@ public class LevelManager : MonoBehaviour
 
     }
     //call this from other functions
-    void ResetTimer(float period){
+    void StartTimer(float period){
         timerRunning = true;
         timer = period;
     }
@@ -137,18 +138,21 @@ public class LevelManager : MonoBehaviour
     {
         currentLevelIndex = 0;
         SceneManager.LoadScene(levelSequence[currentLevelIndex]);
+        StartTimer(10f);
     }
 
     public void NextScene()
     {
         if (currentLevelIndex < levelSequence.Length - 1) {
             SceneManager.LoadScene(levelSequence[currentLevelIndex + 1]);
+            StartTimer(10f);
         }
         else //FINISHES SEQUENCE
         {
             Debug.LogWarning("can't go to the next scene if there's no more!");
             HUD.instance.changeToMenu(HUD.MenuType.END);
         }
+        timerRunning = true;
     }
 
     
