@@ -1,6 +1,290 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Player" ID="{0D45F267-1585-4B5A-A93B-BD495B10A3DB}" ShortID="53184596">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Player" ID="{6044A3FC-B9DD-4DBB-992C-2786316E9EDB}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SpiritWorld_Float" ID="{E6A7599C-A9FE-4256-8E3B-2DA766EC0609}" ShortID="55342188">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpiritWorldFloat" ID="{FD73E5D0-EF97-4DE9-BCD1-5E211BB1F01A}">
+									<Language>SFX</Language>
+									<AudioFile>SpiritWorldFloat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1003554155"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SpiritWorldFloat" ID="{FD73E5D0-EF97-4DE9-BCD1-5E211BB1F01A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpiritWorld_Jump" ID="{4DB8BB23-530C-4651-877D-07ACD1540B0C}" ShortID="507161918">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpiritWorldJump" ID="{983E16C4-F563-462A-82D0-4A9F0908EDFA}">
+									<Language>SFX</Language>
+									<AudioFile>SpiritWorldJump.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1045310187"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SpiritWorldJump" ID="{983E16C4-F563-462A-82D0-4A9F0908EDFA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Overworld_Jump" ID="{F8A27B6D-33D6-464C-B4E7-CC7252A74DC9}" ShortID="162306431">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="OverworldJump" ID="{21888743-0AF3-4406-BD01-D4BF0F1E27F2}">
+									<Language>SFX</Language>
+									<AudioFile>OverworldJump.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="886688993"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="OverworldJump" ID="{21888743-0AF3-4406-BD01-D4BF0F1E27F2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" ShortID="740688240">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Overworld_Footsteps_01" ID="{51B1FBB2-3707-4D47-8706-204747A3D327}" ShortID="59043818">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OverworldFootstep_01" ID="{F684396A-E613-480B-BF56-65030F6F05C5}">
+											<Language>SFX</Language>
+											<AudioFile>OverworldFootstep_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="328921704"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="OverworldFootstep_01" ID="{F684396A-E613-480B-BF56-65030F6F05C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Overworld_Footsteps_02" ID="{EE7DFB8A-5D75-4369-9F7A-0465F1D3CEEB}" ShortID="307497075">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OverworldFootstep_02" ID="{7506AC2F-E296-4631-AA9E-561BA9EF5B28}">
+											<Language>SFX</Language>
+											<AudioFile>OverworldFootstep_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="280805609"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="OverworldFootstep_02" ID="{7506AC2F-E296-4631-AA9E-561BA9EF5B28}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Overworld_Footsteps_03" ID="{DA9BB54F-3393-4BDB-9852-A58A8EBE21CB}" ShortID="604557818">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OverworldFootstep_03" ID="{BEFF0DE3-2CE4-44E8-B9F9-AE2F3AD0994A}">
+											<Language>SFX</Language>
+											<AudioFile>OverworldFootstep_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="177870062"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="OverworldFootstep_03" ID="{BEFF0DE3-2CE4-44E8-B9F9-AE2F3AD0994A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Environment" ID="{B9B8D686-0BE8-4601-BA46-018FC121390A}" ShortID="60619398">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environment" ID="{674D0EF0-2EE6-4264-A816-301C740E8CA2}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Overworld_Ambience" ID="{777D0BC9-9087-4821-B40F-DE20176B3818}" ShortID="1037898186">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="OverworldAmbience" ID="{FB844B38-DED4-4D4E-B45A-045B4567ADDC}">
+									<Language>SFX</Language>
+									<AudioFile>OverworldAmbience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="337487361"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="OverworldAmbience" ID="{FB844B38-DED4-4D4E-B45A-045B4567ADDC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Game_State" ID="{BD3DBDC1-42EE-4B8B-8D04-64C01E5D4FD2}" ShortID="257191929">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Overworld_Switch" ID="{3AAE3204-8BD2-4E20-B655-1CF742847F81}" ShortID="967569486">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="OverworldSwitch" ID="{78746C6E-B8DC-435D-B57D-3534EE53D8B1}">
+									<Language>SFX</Language>
+									<AudioFile>OverworldSwitch.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="679538964"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="OverworldSwitch" ID="{78746C6E-B8DC-435D-B57D-3534EE53D8B1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpiritWorld_Switch" ID="{EB7B92DD-ED79-4D8B-97B9-5C475FA3F67B}" ShortID="977030266">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SpiritWorldSwitch" ID="{CAC93DF3-B4AB-48FE-9BE0-9BF2849C6419}">
+									<Language>SFX</Language>
+									<AudioFile>SpiritWorldSwitch.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="973690474"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="SpiritWorldSwitch" ID="{CAC93DF3-B4AB-48FE-9BE0-9BF2849C6419}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Music" ID="{5FB01B22-06C2-460F-A4CB-C1EC9DF27A4C}" ShortID="413961979">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{6A9D37F3-9E12-4E69-81B2-56CFE3C6163A}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="UI" ID="{F608C1FD-33A2-4AA4-9656-FC2A6B53A170}" ShortID="767265827">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C5F5C198-BDF4-47EF-A896-221714840377}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI" ID="{E04C81C9-3A82-43CE-AFF7-BF3BD7B5FE83}" WorkUnitID="{8D347861-A936-4EE1-93CD-4E7467CB3D29}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

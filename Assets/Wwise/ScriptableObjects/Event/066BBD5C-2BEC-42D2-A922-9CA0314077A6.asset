@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d8d7953fe7f844a1b5c1a23f2796985, type: 3}
+  m_Name: 066BBD5C-2BEC-42D2-A922-9CA0314077A6
+  m_EditorClassIdentifier: 
+  objectName: Play_SpiritWorld_Switch
+  id: 2613282610
+  guid: 066BBD5C-2BEC-42D2-A922-9CA0314077A6

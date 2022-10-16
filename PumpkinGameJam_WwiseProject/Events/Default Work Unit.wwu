@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Overworld_Switch" ID="{96C54D89-FA06-4500-9538-5E6A25345F68}">
+					<ChildrenList>
+						<Action Name="" ID="{A037DC5F-C9D7-459B-A469-766638787FE8}" ShortID="659801204">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Overworld_Switch" ID="{3AAE3204-8BD2-4E20-B655-1CF742847F81}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SpiritWorld_Switch" ID="{066BBD5C-2BEC-42D2-A922-9CA0314077A6}">
+					<ChildrenList>
+						<Action Name="" ID="{6A306912-AA75-4CBE-8DDE-8FDCDD907151}" ShortID="497905795">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SpiritWorld_Switch" ID="{EB7B92DD-ED79-4D8B-97B9-5C475FA3F67B}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
