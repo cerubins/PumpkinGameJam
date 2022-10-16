@@ -19,6 +19,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{18F570A5-A741-490B-8CC6-09C4C91A580F}" ShortID="637694796">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_SpiritWorld_Jump" ID="{50F863E5-B3FF-44D2-BB86-E1231EA0C83D}">
@@ -116,6 +126,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Overworld_Footsteps" ID="{A2344A61-5C35-4C0B-88DE-34F882E1B3CB}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8F7092C5-8D72-4F97-9268-8F98A139C507}" ShortID="241132090">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritWorld_Float" ID="{E6A7599C-A9FE-4256-8E3B-2DA766EC0609}" WorkUnitID="{709F3FF6-401E-4A2D-A5D0-5B5AE31C8308}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
