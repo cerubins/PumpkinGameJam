@@ -8,12 +8,20 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{9043E37C-927F-4653-B5CA-F12A9270F345}" WorkUnitID="{0E57ABED-F31F-4618-A36C-1597EA655FD0}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{6A9D37F3-9E12-4E69-81B2-56CFE3C6163A}">
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="SFX" ID="{63DE7067-3D74-42E1-8269-C8B3850F1AEA}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="UI" ID="{E04C81C9-3A82-43CE-AFF7-BF3BD7B5FE83}">
 									<ObjectLists/>

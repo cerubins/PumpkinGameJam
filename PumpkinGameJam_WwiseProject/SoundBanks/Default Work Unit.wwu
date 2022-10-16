@@ -5,8 +5,8 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{700808DA-A6E9-41BD-8702-5A0B4EDA7223}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_SpiritWorld_Switch" ID="{066BBD5C-2BEC-42D2-A922-9CA0314077A6}" WorkUnitID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Overworld_Switch" ID="{96C54D89-FA06-4500-9538-5E6A25345F68}" WorkUnitID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Locomotion" ID="{2ED5008E-C968-44D8-9F30-BF4BE8D8A3CD}" WorkUnitID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Triggers" ID="{65386B3E-E740-4904-8E6C-09D838BF64A6}" WorkUnitID="{5DB42109-40EA-4603-92FD-FBB5703C65B5}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

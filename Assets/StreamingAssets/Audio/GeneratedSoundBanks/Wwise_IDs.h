@@ -13,8 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_OVERWORLD_AMBIENCE = 1345567807U;
+        static const AkUniqueID PLAY_OVERWORLD_FOOTSTEPS = 4115298192U;
+        static const AkUniqueID PLAY_OVERWORLD_JUMP = 4002722943U;
         static const AkUniqueID PLAY_OVERWORLD_SWITCH = 1355223307U;
+        static const AkUniqueID PLAY_SPIRITWORLD_FLOAT = 2931362732U;
+        static const AkUniqueID PLAY_SPIRITWORLD_JUMP = 773934322U;
         static const AkUniqueID PLAY_SPIRITWORLD_SWITCH = 2613282610U;
+        static const AkUniqueID STOP_OVERWORLD_AMBIENCE = 431072021U;
+        static const AkUniqueID STOP_OVERWORLD_FOOTSTEPS = 1475340186U;
+        static const AkUniqueID STOP_SPIRITWORLD_FLOAT = 32999774U;
     } // namespace EVENTS
 
     namespace BANKS

@@ -167,6 +167,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0a3eec843e7044e2388531a98d83f7ff, type: 2}
+  overworldAmbience_play:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9002dc602735e4c30b04db7f787be478, type: 2}
+  overworldAmbience_stop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4698fe36caf5f45be8493a447b9e849d, type: 2}
   isOverWorld: 0
 --- !u!4 &296309280
 Transform:
@@ -494,6 +502,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8965753693032633991, guid: 3cab50eaddefd4211a34d5176fb74c5e, type: 3}
+      propertyPath: overworld_idle.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 382b01290c0db449ea4ba42a4f7f9843, type: 2}
+    - target: {fileID: -8965753693032633991, guid: 3cab50eaddefd4211a34d5176fb74c5e, type: 3}
+      propertyPath: overworld_jump.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d62f67570bce4a458e229051dafe726, type: 2}
+    - target: {fileID: -8965753693032633991, guid: 3cab50eaddefd4211a34d5176fb74c5e, type: 3}
+      propertyPath: overworld_walk.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 3ea96e119e8424409a98039952a0131a, type: 2}
+    - target: {fileID: -8965753693032633991, guid: 3cab50eaddefd4211a34d5176fb74c5e, type: 3}
+      propertyPath: spiritworld_idle.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: eac1fbfdcf91749428796893efdc5ff7, type: 2}
+    - target: {fileID: -8965753693032633991, guid: 3cab50eaddefd4211a34d5176fb74c5e, type: 3}
+      propertyPath: spiritworld_jump.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cbe00ddc095124b878866a0a25542a74, type: 2}
+    - target: {fileID: -8965753693032633991, guid: 3cab50eaddefd4211a34d5176fb74c5e, type: 3}
+      propertyPath: spiritworld_float.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f9779c0b8407c4322b330dd9355d0158, type: 2}
     - target: {fileID: 4565931221969825001, guid: 3cab50eaddefd4211a34d5176fb74c5e, type: 3}
       propertyPath: m_Name
       value: Physical Form
@@ -844,6 +876,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6074129980738619491, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: overworld_idle.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 382b01290c0db449ea4ba42a4f7f9843, type: 2}
+    - target: {fileID: -6074129980738619491, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: overworld_jump.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d62f67570bce4a458e229051dafe726, type: 2}
+    - target: {fileID: -6074129980738619491, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: overworld_walk.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 3ea96e119e8424409a98039952a0131a, type: 2}
+    - target: {fileID: -6074129980738619491, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: spiritworld_idle.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: eac1fbfdcf91749428796893efdc5ff7, type: 2}
+    - target: {fileID: -6074129980738619491, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: spiritworld_jump.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cbe00ddc095124b878866a0a25542a74, type: 2}
+    - target: {fileID: -6074129980738619491, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
+      propertyPath: spiritworld_float.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f9779c0b8407c4322b330dd9355d0158, type: 2}
     - target: {fileID: 4254335151164569777, guid: 743c8d5be5d8e44109f79b0733d9a6b9, type: 3}
       propertyPath: m_RootOrder
       value: 5

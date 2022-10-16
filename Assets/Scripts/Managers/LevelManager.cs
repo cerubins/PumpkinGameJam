@@ -19,6 +19,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] Cinemachine.CinemachineVirtualCamera overworld_camera;
     [SerializeField] AK.Wwise.Event overworld_switch;
     [SerializeField] AK.Wwise.Event spiritworld_switch;
+    [SerializeField] AK.Wwise.Event overworldAmbience_play;
+    [SerializeField] AK.Wwise.Event overworldAmbience_stop;
 
     //Level vars
     public bool isOverWorld;
@@ -49,12 +51,16 @@ public class LevelManager : MonoBehaviour
         {
             overworld_switch.Post(gameObject);
 
+            overworldAmbience_play.Post(gameObject);
+
             overworld_controller.enabled = true;
             ghost_controller.enabled = false;
         }
         else
         {
             spiritworld_switch.Post(gameObject);
+
+            overworldAmbience_stop.Post(gameObject);
 
             overworld_controller.enabled = false;
             ghost_controller.enabled = true;
